@@ -1,0 +1,1 @@
+Essa pasta possui as atividades da disciplina de Fundamentos de Programação e Desenvolvimento de Projetos aplicados a Neuroengenharia do Aluno Alexandre Chaves Fernandes 
