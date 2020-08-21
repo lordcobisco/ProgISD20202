@@ -9,5 +9,3 @@ clone/pull/download
 alterar o conteúdo
 subir pra pasta repositório local
 pull request
-
-Pense que está difícil...
