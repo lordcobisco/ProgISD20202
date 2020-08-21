@@ -99,10 +99,25 @@ Questão 4
 Questão 5
 
 lokomat
+Var pacientechegou, medirmembropaciente,  colocarcolete, irparalokomat, içarpaciente, colocarexoesqueleto,AcionarSoftware,AcionarEsteira,BaixarIçamento,VerificarRendimento
+Inicio
+Escreva "paciente chegou?"
+Leia pacientechegou
+Se pacientechegou = sim
+   escreva "Medir membros inferiores do Paciente?"
+   Se medirmembropaciente = sim
+      Escreva "Colocar colete de Içamento no Paciente"
+   Senão pacientechegou
+   repita leia pacientechegou
+          Se colocariçamento = sim
+             Escreva "Configurar carga de paciente"
+                Se inciarmarcha = sim
+                   Escreva "marcha iniciada"
 
+
+
+Algoritmo
 ZeroG
-
-Algoritmo ZeroG
 Var Pacienteempe, pacientelesionado, colocariçamento, cargapaciente, inciarmarcha,
 Inicio
 Escreva "Paciente está em pé?"
@@ -112,9 +127,12 @@ Se pacienteempe = sim
    Se pacientelesionado = sim
       Escreva "Colocar colete de Içamento no Paciente"
    Senão Pacientelesionado
-   repita leiapacienelesionado
+   repita leia pacienelesionado
           Se colocariçamento = sim
-             Escreva 
+             Escreva "Configurar carga de paciente"
+                Se inciarmarcha = sim
+                   Escreva "marcha iniciada"
+                   
 
 
 Senão pacienteempe
