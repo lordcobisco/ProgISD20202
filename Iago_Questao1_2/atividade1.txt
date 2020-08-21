@@ -1,0 +1,124 @@
+Questão 1
+
+Lokomat
+
+paciente com lesão medular chega em cadeira de rodas
+é medido o comprimento dos membros inferiores
+seguida é colocado o colete de içamento do lokomat
+cadeirante caminha até a esteira e içamento
+içamento é realizado até o paciente ficar em postura de pé
+onde o exoesqueleto é posicionado e regulado para o paciente
+as devidas cintas são presas ao corpo do paciente
+acionado no software dando inicio a marcha do paciente
+o içamento é regulado e baixado até contato com esteira
+verificado o rendimento do paciente em monitor
+exercicio é concluído de acordo com tempo programado
+
+
+ZeroG
+
+paciente é colocado de pé
+paciente tem dois membros inferiores amputados e usa protese
+é colocado colete de içamento do ZeroG
+Configurado a quantidade de carga a ser suportada pelo zerog
+o paciente começa a inciar a marcha e o dispositivo o acompanha para aliviar a carga do peso proprio do paciente, facilitando a locomoção do mesmo.
+
+----------
+
+Questão 2
+
+Lokomat
+
+pacientechegou - Processamento
+medirmembropaciente - Entrada
+colocarcolete - processamento
+irparalokomat - processamento
+içarpaciente - processamento
+Colocarexoesqueleto - processamento
+AcionarSoftware - Entrada
+AcionarEsteira - Saída
+BaixarIçamento - saída
+VerificarRendimento - Saída
+
+ZeroG
+
+Pacienteempe - processamento
+pacientelesionado - processamento
+colocarIçamento - processamento
+Cargapaciente - entrada
+Içamentorealizado - Saída
+IniciarMarcha	- Entrada
+Marchainiciada - Saída
+Atividade - Saída
+
+-----------------
+
+Questão 3
+
+Lokomat
+
+Se pacientechegou
+senão pacientechegou 
+    repita pacientechegou
+
+Se colocarcolete
+Senão colocarcolete
+     repita colocar colete
+
+Se irparalokomat
+senão irparalokomat
+     repita irparalokomat
+
+Se içarpaciente
+senão içarpaciente
+     repita içarpaciente
+
+Se colocarexoesqueleto
+senão colocarexoesqueleto
+     repita colocarexoesqueleto
+
+ZeroG
+
+Se Pacienteempe
+Senão Pacienteempe
+   repita Pacienteempe
+
+Se pacientelesionado
+Senão Pacientelesionado
+   repita Pacientelesionado
+
+Se Colocariçamento
+Senão Colocariçamento
+   repita colocariçamento
+
+----------------------------------
+
+Questão 4
+
+---------------------------------
+Questão 5
+
+lokomat
+
+ZeroG
+
+Algoritmo ZeroG
+Var Pacienteempe, pacientelesionado, colocariçamento, cargapaciente, inciarmarcha,
+Inicio
+Escreva "Paciente está em pé?"
+Leia Pacienteempe
+Se pacienteempe = sim
+   escreva "O Paciente é lesionado e usa protése?"
+   Se pacientelesionado = sim
+      Escreva "Colocar colete de Içamento no Paciente"
+   Senão Pacientelesionado
+   repita leiapacienelesionado
+          Se colocariçamento = sim
+             Escreva 
+
+
+Senão pacienteempe
+   retorne leia pacienteempe
+
+
+
