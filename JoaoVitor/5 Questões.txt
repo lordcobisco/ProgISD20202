@@ -1,0 +1,23 @@
+1. Para criar um software interpretável pelo computador, é necessário uma rotina em lógica de programação ou em linguagem de programação?
+
+2. Os computadores são dispositivos complexos, porém, apenas conseguem desempenhar atividades caso sejam programados e sejam designadas funções que se utilizem de sua arquitetura para processar dados. Caso contrário, são incapazes de interpretar comandos do usuário. Verdadeiro ou falso?
+
+3. Atribua o respectivo número à alternativa correspondente.
+	I. Responsável pelo processamento e cálculo. 
+	II. Meios de comunicaçao entre o computador e fontes externas. 
+	III. Onde ficam armazenados os dados (3).
+Memória( )
+Processador( )
+Dispositivos de I/O( ).
+
+4. Assinale a alternativa que não representa um tipo de dado:
+a) Numérico;
+b) Literal;
+c) Lógico;
+d) Nenhuma das alternativas.
+
+5. Atribua o respectivo número à alternativa correspondente.
+ 	I. Utilizado para armazenar dados estáticos;
+	II. Utilizado para armazenar dados alteráveis durante a execução.
+( ) Variável
+( ) Constante
