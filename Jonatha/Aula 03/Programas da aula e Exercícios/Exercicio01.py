@@ -1,9 +1,9 @@
 # EXERCÍCIO 01 - Índice de massa corporal (IMC)
 
 print('Programa usado para calcular o indice de massa corporal.')
-peso = float(input('Informe seu peso: '))
+peso = 76.0
+altura = 1.77
 
-altura = float(input('Informe sua altura: '))
 print(type(peso))
 imc = peso/(altura ** 2)
 print('Muito abaixo do peso', imc < 17)
