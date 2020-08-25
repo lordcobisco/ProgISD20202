@@ -9,9 +9,10 @@ areaPesquisa = 'neurociencias'
 print('Esse programa tem como objetivo receber dados para automatizar o uso do miscroscópio confocal.')
 
 print('CONFIGURAÇÃO DO EQUIPAMENTO')
-nome = input('Olá, antes de configurar o equipamento gostaria de saber seu nome: ')
+nome = input(
+    'Olá, antes de configurar o equipamento gostaria de saber seu nome: ')
 
-print('\nOlá, '+ nome+'!'+ ' Agora vamos configurar o equipamento.')
+print('\nOlá, ' + nome+'!' + ' Agora vamos configurar o equipamento.')
 # Deve ter 10 inputs
 temp = resolucao
 resolucao = input('Por favor, informe a resolução da imagem desejada: ')
@@ -26,144 +27,224 @@ areaPesquisa = input('\nInforme a área de pesquisa: ')
 print('Houve alteração na variável inserida? ', areaPesquisa != temp)
 
 print('\nAs informações de configurações setadas pelo usuário são: ')
-print('Resolução: ',resolucao)
+print('Resolução: ', resolucao)
 print('Tipo de Celula: ', tipoCelula)
 print('Area de Pesquisa: ', areaPesquisa)
-print('Resolução: ',resolucao)
-print('Resolução: ',resolucao)
-print('Resolução: ',resolucao)
-print('Resolução: ',resolucao)
+print('Resolução: ', resolucao)
+print('Resolução: ', resolucao)
+print('Resolução: ', resolucao)
+print('Resolução: ', resolucao)
 print('Resolução: ', resolucao)
 print('Resolução: ', resolucao)
 print('Resolução: ', resolucao)
 
-## CALIBRAÇÃO DO EQUIPAMENTO
+# CALIBRAÇÃO DO EQUIPAMENTO
 print('\nVamos agora calibrar o equipamento.')
-'''
-#Calibração Horizontal 1
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 2
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
-
-#Calibração Horizontal 3
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
-
-#Calibração Horizontal 4
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+# Calibração Horizontal 1
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
 calHorizontal = input(
     'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 5
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+# Calibração Horizontal 2
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 6
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+# Calibração Horizontal 3
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 7
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+# Calibração Horizontal 4
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 8
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+# Calibração Horizontal 5
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 9
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+# Calibração Horizontal 6
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
 
-#Calibração Horizontal 10
-calHorizontal = input('\nDigite a primeira letra do seu nome 10x [letra '+ nome[0].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
-calHorizontal = input('Digite a ultima letra do seu nome 10x [letra '+ nome[-1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calHorizontal + '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
-'''
-#Calibração Vertical 1
+# Calibração Horizontal 7
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+
+# Calibração Horizontal 8
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+
+# Calibração Horizontal 9
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+
+# Calibração Horizontal 10
+calHorizontal = input(
+    '\nDigite a primeira letra do seu nome 10x [letra ' + nome[0].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[0].lower() + '] é', calHorizontal == nome[0].lower())
+calHorizontal = input(
+    'Digite a ultima letra do seu nome 10x [letra ' + nome[-1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calHorizontal +
+      '] e a letra de calibração horizontal [' + nome[-1].lower() + '] é', calHorizontal == nome[-1].lower())
+
+# Calibração Vertical 1
 print('\nVamos para calibração vertical agora.')
 
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 2
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 2
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 3
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 3
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 4
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 4
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 5
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 5
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 6
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 6
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 7
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 7
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 8
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 8
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 9
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 9
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
-#Calibração Vertical 10
-calVertical = input('\nDigite a segunda letra do seu nome 10x [letra '+ nome[1].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
-calVertical = input('Digite a penultima letra do seu nome 10x [letra '+ nome[-2].lower() +']:')
-print('O resultado da comparação entre a tecla pressinada [' + calVertical + '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
+# Calibração Vertical 10
+calVertical = input(
+    '\nDigite a segunda letra do seu nome 10x [letra ' + nome[1].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[1].lower() + '] é', calVertical == nome[1].lower())
+calVertical = input(
+    'Digite a penultima letra do seu nome 10x [letra ' + nome[-2].lower() + ']:')
+print('O resultado da comparação entre a tecla pressinada [' + calVertical +
+      '] e a letra de calibração vertical [' + nome[-2].lower() + '] é', calVertical == nome[-2].lower())
 
 print('Fim da calibração. Equipamento pronto para utilização.')
+
 '''
 a. Crie as variáveis necessárias para que o programa funcione corretamente.
 b. Inicialize as variáveis com valores padrão adequados.
