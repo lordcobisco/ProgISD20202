@@ -31,4 +31,3 @@ if (botao1Apertado or botao2Apertado):
 
 
 
-
