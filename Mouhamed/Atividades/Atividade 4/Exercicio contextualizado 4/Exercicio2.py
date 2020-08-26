@@ -6,6 +6,7 @@ if var1 == "s":
     resposta1 = var1  
 
 distancia = 30
+contador1 = 0
 
 dist_usuario = float(input('Qual a distância do animal? \n'))
 
@@ -15,25 +16,109 @@ if dist_usuario < distancia:
 tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
 if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n')
+if tocar_barra == "s":
     print ( "O experimento ainda esta na mesma etapa")
-    print ( "O experimento passou para a próxima etapa") # vigésimo toque, se fosse um laço
+    contador1 = contador1 + 1
+
+tocar_barra = input('O animal tocou a barra?? Responda "s" para sim ou "n" para não  \n') # 20ª vez
+if tocar_barra == "s":
+    contador1 = contador1 + 1
+    if contador1 == 20:
+        print ( "O experimento passou de etapa")
+    
+
+
+
+
+
 
 
 barra_esquerda = input("O animal tocou a barra esquerda? (Responda n para não e s para sim) \n ")
@@ -54,9 +139,186 @@ if som2 == "s" and barra_direita == "s":
 else:
     print ("Não liberar recompensa")
 
-quantidade = input("O experimento foi realizado 50 vezes em 30 minutos? (Responda n para não e s para sim) \n ")
+#até o momento será considerado que o experimento foirealizado 20 vezes, visto que passou para a proxima fase
 
+contador1 = 20
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") #contador começa no 20
 if quantidade == "s":
-    print ("O experimento seguirá para a próxima fase") # foi feita dessa forma apenas para simplificar, visto que acima já repeti 20x.
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 1
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") 
+if quantidade == "s":
+    print ("O experimento segue para a mesma fase") # 29
+    contador1 = contador1 + 1
+
+quantidade = input("O experimento foi realizado novamente? (Responda n para não e s para sim) \n ") #experimentoo 50
+if quantidade == "s":
+    contador1 = contador1 + 1
+    if contador1 == 50:
+        print ("O experimento seguirá para a próxima fase") 
+    
+
+
+
+
+
+
 
 
