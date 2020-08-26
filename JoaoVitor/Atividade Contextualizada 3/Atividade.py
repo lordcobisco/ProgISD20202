@@ -77,3 +77,187 @@ print("Offset digital em: ", digital_offset_buff)
 print("Ganho digital em: ", digital_gain_buff, "x")
 print("Resolução de captura: ", resolucao_buff, " pixels")
 print("Velocidade de amostragem em: ", velocidade_amostragem_buff, " um^2/s")
+
+print("\nCALIBRAÇÃO HORIZONTAL\n PRESSIONE j 10 VEZES SEGUIDAS, DEPOIS o 10 VEZES SEGUIDAS")
+print("\n===\nBOTAO j 10x\n")
+
+calib_h_J0 = input("Digite j (1 de 10):")
+b_calib_h_J0 = bool(calib_h_J0 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J0, "Caractere pressionado: ", calib_h_J0)
+
+calib_h_J1 = input("Digite j (2 de 10):")
+b_calib_h_J1 = bool(calib_h_J1 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J1, "Caractere pressionado: ", calib_h_J1)
+
+calib_h_J2 = input("Digite j (3 de 10):")
+b_calib_h_J2 = bool(calib_h_J2 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J2, "Caractere pressionado: ", calib_h_J2)
+
+calib_h_J3 = input("Digite j (4 de 10):")
+b_calib_h_J3 = bool(calib_h_J3 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J3, "Caractere pressionado: ", calib_h_J3)
+
+calib_h_J4 = input("Digite j (5 de 10):")
+b_calib_h_J4 = bool(calib_h_J4 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J4, "Caractere pressionado: ", calib_h_J4)
+
+calib_h_J5 = input("Digite j (6 de 10):")
+b_calib_h_J5 = bool(calib_h_J5 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J5, "Caractere pressionado: ", calib_h_J5)
+
+calib_h_J6 = input("Digite j (7 de 10):")
+b_calib_h_J6 = bool(calib_h_J6 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J6, "Caractere pressionado: ", calib_h_J6)
+
+calib_h_J7 = input("Digite j (8 de 10):")
+b_calib_h_J7 = bool(calib_h_J7 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J7, "Caractere pressionado: ", calib_h_J7)
+
+calib_h_J8 = input("Digite j (9 de 10):")
+b_calib_h_J8 = bool(calib_h_J8 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J8, "Caractere pressionado: ", calib_h_J8)
+
+calib_h_J9 = input("Digite j (10 de 10):")
+b_calib_h_J9 = bool(calib_h_J9 == "j")
+print("O botão j foi pressionado corretamente?", b_calib_h_J9, "Caractere pressionado: ", calib_h_J9)
+
+#################################################################################
+
+print("\n===\nBOTAO o 10x\n")
+calib_h_O0 = input("Digite o (1 de 10):")
+b_calib_h_O0 = bool(calib_h_O0 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O0, "Caractere pressionado: ", calib_h_O0)
+
+calib_h_O1 = input("Digite o (2 de 10):")
+b_calib_h_O1 = bool(calib_h_O1 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O1, "Caractere pressionado: ", calib_h_O1)
+
+calib_h_O2 = input("Digite o (3 de 10):")
+b_calib_h_O2 = bool(calib_h_O2 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O2, "Caractere pressionado: ", calib_h_O2)
+
+calib_h_O3 = input("Digite o (4 de 10):")
+b_calib_h_O3 = bool(calib_h_O3 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O3, "Caractere pressionado: ", calib_h_O3)
+
+calib_h_O4 = input("Digite o (5 de 10):")
+b_calib_h_O4 = bool(calib_h_O4 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O4, "Caractere pressionado: ", calib_h_O4)
+
+calib_h_O5 = input("Digite o (6 de 10):")
+b_calib_h_O5 = bool(calib_h_O5 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O5, "Caractere pressionado: ", calib_h_O5)
+
+calib_h_O6 = input("Digite o (7 de 10):")
+b_calib_h_O6 = bool(calib_h_O6 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O6, "Caractere pressionado: ", calib_h_O6)
+
+calib_h_O7 = input("Digite o (8 de 10):")
+b_calib_h_O7 = bool(calib_h_O7 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O7, "Caractere pressionado: ", calib_h_O7)
+
+calib_h_O8 = input("Digite o (9 de 10):")
+b_calib_h_O8 = bool(calib_h_O8 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O8, "Caractere pressionado: ", calib_h_O8)
+
+calib_h_O9 = input("Digite o (10 de 10):")
+b_calib_h_O9 = bool(calib_h_O9 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O9, "Caractere pressionado: ", calib_h_O9)
+
+falha_horizontal = bool(b_calib_h_J0 and b_calib_h_J1 and b_calib_h_J2 and b_calib_h_J3 and b_calib_h_J4 and b_calib_h_J5 and b_calib_h_J6 and b_calib_h_J7 and b_calib_h_J8 and b_calib_h_J9 and b_calib_h_O0 and b_calib_h_O1 and b_calib_h_O2 and b_calib_h_O3 and b_calib_h_O4 and b_calib_h_O5 and b_calib_h_O6 and b_calib_h_O7 and b_calib_h_O8 and b_calib_h_O9)
+
+#######################################################################
+
+
+print("\nCALIBRAÇÃO VERTICAL\n PRESSIONE o 10 VEZES SEGUIDAS, DEPOIS t 10 VEZES SEGUIDAS")
+print("\n===\nBOTAO o 10x\n")
+
+calib_h_O0 = input("Digite o (1 de 10):")
+b_calib_h_O0 = bool(calib_h_O0 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O0, "Caractere pressionado: ", calib_h_O0)
+
+calib_h_O1 = input("Digite o (2 de 10):")
+b_calib_h_O1 = bool(calib_h_O1 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O1, "Caractere pressionado: ", calib_h_O1)
+
+calib_h_O2 = input("Digite o (3 de 10):")
+b_calib_h_O2 = bool(calib_h_O2 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O2, "Caractere pressionado: ", calib_h_O2)
+
+calib_h_O3 = input("Digite o (4 de 10):")
+b_calib_h_O3 = bool(calib_h_O3 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O3, "Caractere pressionado: ", calib_h_O3)
+
+calib_h_O4 = input("Digite o (5 de 10):")
+b_calib_h_O4 = bool(calib_h_O4 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O4, "Caractere pressionado: ", calib_h_O4)
+
+calib_h_O5 = input("Digite o (6 de 10):")
+b_calib_h_O5 = bool(calib_h_O5 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O5, "Caractere pressionado: ", calib_h_O5)
+
+calib_h_O6 = input("Digite o (7 de 10):")
+b_calib_h_O6 = bool(calib_h_O6 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O6, "Caractere pressionado: ", calib_h_O6)
+
+calib_h_O7 = input("Digite o (8 de 10):")
+b_calib_h_O7 = bool(calib_h_O7 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O7, "Caractere pressionado: ", calib_h_O7)
+
+calib_h_O8 = input("Digite o (9 de 10):")
+b_calib_h_O8 = bool(calib_h_O8 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O8, "Caractere pressionado: ", calib_h_O8)
+
+calib_h_O9 = input("Digite o (10 de 10):")
+b_calib_h_O9 = bool(calib_h_O9 == "o")
+print("O botão o foi pressionado corretamente?", b_calib_h_O9, "Caractere pressionado: ", calib_h_O9)
+
+#################################################################################
+
+print("\n===\nBOTAO t 10x\n")
+calib_h_T0 = input("Digite t (1 de 10):")
+b_calib_h_T0 = bool(calib_h_T0 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T0, "Caractere pressionado: ", calib_h_T0)
+
+calib_h_T1 = input("Digite t (2 de 10):")
+b_calib_h_T1 = bool(calib_h_T1 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T1, "Caractere pressionado: ", calib_h_T1)
+
+calib_h_T2 = input("Digite t (3 de 10):")
+b_calib_h_T2 = bool(calib_h_T2 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T2, "Caractere pressionado: ", calib_h_T2)
+
+calib_h_T3 = input("Digite t (4 de 10):")
+b_calib_h_T3 = bool(calib_h_T3 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T3, "Caractere pressionado: ", calib_h_T3)
+
+calib_h_T4 = input("Digite t (5 de 10):")
+b_calib_h_T4 = bool(calib_h_T4 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T4, "Caractere pressionado: ", calib_h_T4)
+
+calib_h_T5 = input("Digite t (6 de 10):")
+b_calib_h_T5 = bool(calib_h_T5 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T5, "Caractere pressionado: ", calib_h_T5)
+
+calib_h_T6 = input("Digite t (7 de 10):")
+b_calib_h_T6 = bool(calib_h_T6 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T6, "Caractere pressionado: ", calib_h_T6)
+
+calib_h_T7 = input("Digite t (8 de 10):")
+b_calib_h_T7 = bool(calib_h_T7 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T7, "Caractere pressionado: ", calib_h_T7)
+
+calib_h_T8 = input("Digite t (9 de 10):")
+b_calib_h_T8 = bool(calib_h_T8 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T8, "Caractere pressionado: ", calib_h_T8)
+
+calib_h_T9 = input("Digite t (10 de 10):")
+b_calib_h_T9 = bool(calib_h_T9 == "t")
+print("O botão t foi pressionado corretamente?", b_calib_h_T9, "Caractere pressionado: ", calib_h_J9)
+
+falha_vertical = bool(b_calib_h_O0 and b_calib_h_O1 and b_calib_h_O2 and b_calib_h_O3 and b_calib_h_O4 and b_calib_h_O5 and b_calib_h_O6 and b_calib_h_O7 and b_calib_h_O8 and b_calib_h_O9 and b_calib_h_T0 and b_calib_h_T1 and b_calib_h_T2 and b_calib_h_T3 and b_calib_h_T4 and b_calib_h_T5 and b_calib_h_T6 and b_calib_h_T7 and b_calib_h_T8 and b_calib_h_T9)
+
+print("\nCalibração horizontal realizada com sucesso?", falha_horizontal)
+print("Calibração vertical realizada com sucesso?", falha_vertical)
+
+print("Calibração do sistema finalizada.")
