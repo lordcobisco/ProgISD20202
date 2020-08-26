@@ -1,13 +1,11 @@
 import math
-#valores do peso e altura
+#valores
 peso=float(input('Insira seu peso '))
 altura=float(input('Insira sua altura '))
-#IMC
 imc= peso/math.pow(altura,2)
-#Mostrando o valor de IMC
 print(imc)
 
-#Mostrando a analise do IMC
+#analise do IMC
 if(imc<17.0):
     print("Muito abaixo do peso")
 
