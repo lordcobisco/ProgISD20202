@@ -1,3 +1,6 @@
+#Atividade IMC
+#Aluno João Vitor da Silva Neto
+
 print("Cálculadora de IMC.\n")
 peso = float(input("Insira seu peso em kg, no formato KK.GGG\n"))
 altura = float(input("Insira sua altura no formato M.CM\n"))
