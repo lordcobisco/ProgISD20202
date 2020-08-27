@@ -7,7 +7,7 @@ media_imagem = 1
 tons_cinza = 12 
 area_scaneada = 160
 slices = 20
-intervalo = 0,91
+intervalo = 0.91
 zoom = 2
 
 #Abertura do programa
