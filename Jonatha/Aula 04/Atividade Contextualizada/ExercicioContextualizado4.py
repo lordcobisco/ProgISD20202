@@ -1,4 +1,3 @@
-
 from os import system
 system('clear')
 
@@ -15,6 +14,7 @@ barraEsquerda = False  # Indica o toque na barra esquerda
 barraDireita = False  # Indica o toque na barra direita
 tempoValido = True  # Experimento sendo realizado dentro de 30min
 proximaEtapa = False
+
 # RECEBENDO INFORMAÇÃO SE O ANIMAL ESTÁ HABITUADO (Questão 2 - letra a)
 resposta = input('Informe se o animal está habituado [sim ou não]: ')
 if(resposta[0].lower() == 's'):
