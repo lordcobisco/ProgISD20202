@@ -1,0 +1,17 @@
+1. Qual a finalidade de utilizar estuturas de decisão?
+a) Exibir valores na tela
+b) Compilar o código em diferentes circunstâncias
+c) Fazer escolhas de uso para diferentes comandos durante a execução
+d) Tornar o código compatível com outras linguagens
+
+2. Em Python, caso a decisão tenha mais de duas opções, além do if/else, qual estrutura deve ser usada?
+a) elsif
+b) other
+c) else if
+d) elif
+
+3. Que tipos de dados podem ser utilizados para tomadas de decisão?
+a) Bool
+b) String
+c) Int
+d) Todas as respostas anteriores
