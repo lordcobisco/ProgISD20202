@@ -52,7 +52,25 @@ else:
     if(reflexo==1):
         total=total*0.1
         print("Injetar mais",total,"da substância anestesica")
+##Pós-operátório
+posoperatorio=bool(input("Será necessário medicação de pós-operátório?1 para sim e 0 para não"))
 
+Antiinflamatorio=("aspirina ","indometacina","diclofenaco","paracetamol")
+
+contador=0
+while(posoperatorio):
+     if (animal==1):
+         buprenorfina=0.05*(Peso*0.001)
+         aspirina=120*(Peso*0.001)
+         indometicina=1*(Peso*0.001)
+         diclofenaco=round(0.8*(Peso*0.001),4)
+         paracetamol=200*(Peso*0.001)
+         for hora in range(0,48,4):
+             contador=contador+1
+         print("O animal precisará de  buprenorfina dosagem de (mg):",buprenorfina,"a cada 4 horas, ou seja,",contador,"aplicações")
+         print("#Anti-inflamatório e antibióticos")
+         print("Aspirina:",aspirina,"mg\nIndometicina",indometicina,"mg\nDiclofenaco",diclofenaco,"mg ou Paracetamol",paracetamol)
+     operar=bool(input("\nAinda é necessário medicação de pós-operátório?1 para sim e 0 para não"))
 
 """ACEPROMAZINA ACEPRAM 0,2% UNIVET 2,0 mg/ml
 ATROPINA SULFATO DE
