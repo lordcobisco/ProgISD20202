@@ -1,4 +1,5 @@
 '''
+Descrição
 Requisito 1: Habituação
 Se o animal está habituado, registrar em uma variável
 Requisito 2: Regime de aproximações sucessivas
