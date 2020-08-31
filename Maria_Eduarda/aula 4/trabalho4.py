@@ -1,9 +1,9 @@
 #Habituação
 print("********FASE DE HABITUAÇÃO ********")
-habituacao=bool(input("O animal está habituado, 1 para sim  e 0 para não?"))
+habituacao=int(input("O animal está habituado, 1 para sim  e 0 para não?"))
 distancia=30 #R2: i
-if (habituacao):
-    print("Prossiga com os experimentos até ele está habituado")
+if (habituacao==1):
+    print("Prossiga com os experimentos comportamentais")
     habituado=True   
 else:
      print("\n ********Regime de aproximações sucessivas********")
@@ -16,203 +16,203 @@ else:
 ########TOCAR A BARRA
      print("\n Reforço do comportamento de tocar a barra")
      contador=0
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#1
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#1
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#2
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#2
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#3
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#3
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#4
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#4
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#5
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#5
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#6
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#6
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#7
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#7
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-         Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#8
+         Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#8
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#9
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#9
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#10
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#10
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#11
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#11
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#12
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#12
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#13
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#13
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#14
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#14
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#15
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#15
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#16
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#16
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#17
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#17
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#18
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#18
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#19
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#19
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#20
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#20
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#21
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#21
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#22
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#22
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#23
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#23
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#24
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#24
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#25
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#25
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#26
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#26
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#27
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#27
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#28
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#28
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#29
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#29
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#30
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#30
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#31
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#31
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#32
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#32
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#33
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#33
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#34
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#34
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#35
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#35
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#36
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#36
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#37
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#37
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#38
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#38
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#39
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#39
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#40
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#40
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#41
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#41
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#42
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#42
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#43
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#43
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#44
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#44
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#45
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#45
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#46
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#46
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#47
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#47
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#48
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#48
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#49
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#49
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")
-     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não"))#50
+     Tocar=int(input("O animal tocou em alguma das barras, 1 para sim e 2 para não:"))#50
      if (Tocar==1):
          contador=contador+1
          print("Liberar 0.5 de rec")

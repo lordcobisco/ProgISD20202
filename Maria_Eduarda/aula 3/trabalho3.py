@@ -50,7 +50,7 @@ print("Modo de escaneamento: ", ModoEscaneamento2)
 
 #Ajuste na horizontal 
 #1
-print("\n Para a calibração na horizontal seja efetuada você precisará informar a primeira e a ultima letra do seu nome.Vale deixar claro, que esse procedimento ocorrerá 10 vezes")
+print("\nPara a calibração na horizontal seja efetuada você precisará informar a primeira e a ultima letra do seu nome.Vale deixar claro, que esse procedimento ocorrerá 10 vezes")
 print("Primeira Interação:")
 primeira=input("Primeira:")
 ultima=input("Ultima:")
@@ -113,7 +113,7 @@ print("A ultima letra coincide:" + str(ultima==u) + ".  O caracter digitado foi:
 
 #Ajuste na Vertical
 #1
-print("\n Para a calibração na vertical seja efetuada você precisará informar a segunda e a penultima letra do seu nome.Vale deixar claro, que esse procedimento ocorrerá 10 vezes")
+print("\nPara a calibração na vertical seja efetuada você precisará informar a segunda e a penultima letra do seu nome.Vale deixar claro, que esse procedimento ocorrerá 10 vezes")
 print("Primeira Interação:")
 Segunda=input("Segunda:")
 Penultima=input("Penultima:")
