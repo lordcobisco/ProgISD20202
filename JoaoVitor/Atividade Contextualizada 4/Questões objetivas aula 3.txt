@@ -1,0 +1,28 @@
+1. O Python é nativamente uma linguagem:
+a) Compilada
+b) Interpretada
+c) Descritiva
+d) Pseudocódigo
+
+2. Qual a linguagem base do interpretador Python IDLE?
+a) Java
+b) Rust
+c) C/C++
+d) Ruby
+
+3. Afirme verdadeiro ou falso:
+a) É necessário possuir uma IDE para executar um programa no computador (F)
+b) O Python é uma linguagem de baixo nível de abstração (F)
+c) Depuração é uma ótima maneira de encontrar problemas na programação sem, necessariamente, ter um código operante (V)
+
+4. São operadores do Python:
+a) ==, !=, >, <, >=, <=
+b) igual, diferente, maiorq, menorq, maiorigual, menorigual
+c) equal, different, greater_than, less_than, greater_equal, less_equal
+d) °, º, ª, ¹, ², ³
+
+5. Qual a função correta para dar entrada de um valor à uma variável "var"?
+a) var = python()
+b) var = input()
+c) var = print()
+d) var = ok_google()
