@@ -24,8 +24,6 @@ ind_Recuperadosnovos  = 14
 #ind_emAcompanhamentoNovos = 15
 #ind_interior_metropolitana = 16
 
-
-
 # a. Realize o download dos dados de forma manual e crie uma lista e uma tupla com as
 #informações disponíveis no documento csv (coloque pelo menos 1 linha por estado e 10
 #regiões de saúde diferentes, algo próximo de umas 40 linhas).
@@ -87,7 +85,7 @@ lista_covid = [['Norte', 			'AC', 'Porto Walter', 				12, 120039, 12003, 'JURUA 
 			   ['Nordeste',			'PI', 'Teresina',					22,	221100,	22004, 'ENTRE RIOS',							'2020-08-18 00:00:00', 34, 864845.0, 22102,	299, 833, 7,'','',1],
                ['Sudeste',			'RJ', '',							33,	'',	'',	'',										        '2020-08-29 00:00:00', 35, 17264943,222957,	3759, 16016,157,'','','']]
 
-tupla_covid = (('Norte', 			'AC', 'Porto Walter', 				12, 120039, 12003, 'JURUA E TARAUAestadCA/ENVIRA', 				'2020-08-29 00:00:00', 35, 11982.0, 258, 10, 2, 0, ' ', ' ', 0.0), 
+tupla_covid = (('Norte', 			'AC', 'Porto Walter', 				12, 120039, 12003, 'JURUA E TARAUAestadCA/ENVIRA', 			'2020-08-29 00:00:00', 35, 11982.0, 258, 10, 2, 0, ' ', ' ', 0.0), 
                ('Norte', 			'AC', 'Santa Rosa do Purus', 		12, 120043, 12002, 'BAIXO ACRE E PURUS', 					'2020-08-29 00:00:00', 35, 6540.0, 274, 0, 2, 0, ' ', ' ', 0.0), 
                ('Nordeste', 		'AL', 'Minador do Negrão', 			27, 270530, 27008, '8ª REGIAO DE SAUDE', 					'2020-08-29 00:00:00', 35, 5329.0, 12, 0, 0, 0, ' ', ' ', 0.0), 
                ('Nordeste', 		'AL', 'Penedo', 					27, 270670, 27006, '6ª REGIAO DE SAUDE', 					'2020-08-29 00:00:00', 35, 63683.0, 1196, 3, 13, 0, ' ', ' ', 0.0), 
@@ -143,11 +141,9 @@ tupla_covid = (('Norte', 			'AC', 'Porto Walter', 				12, 120039, 12003, 'JURUA 
 			   ('Nordeste',			'PI', 'Teresina',					22,	221100,	22004, 'ENTRE RIOS',							'2020-08-18 00:00:00', 34, 864845.0, 22102,	299, 833, 7,'','',1),
                ('Sudeste',			'RJ', '',							33,	'',	'',	'',										        '2020-08-29 00:00:00', 35, 17264943,222957,	3759, 16016,157,'','',''))
 
-
 print('Gerada lista de dados covid')
 print('Tamanho total da lista: ', len(lista_covid))
 print('')
-
 
 # b. Mande printar na tela o número de casos acumulados para o estado do rio de janeiro
 #tanto para a tupla quanto para a lista.
@@ -220,11 +216,9 @@ print('Casos acumulados no estado', lista_covid[53][ind_estado], ', município '
 print('Casos acumulados no estado', lista_covid[54][ind_estado], ', município ',lista_covid[54][ind_municipio],':',lista_covid[54][ind_obitosAcumulado])
 print('')
 
-
 #d. Assuma que os dados de óbitos novos para o estado da paraíba estejam errados em 10
 #unidades para menos. Sobrescreva a informação tanto na lista quanto na tupla,
 #corrigindo os dados.
-
 
 print('_'*80)
 print('item d - correção de dados de óbitos novos')
