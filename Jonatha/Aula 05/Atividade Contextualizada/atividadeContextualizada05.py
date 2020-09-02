@@ -5,6 +5,7 @@ system('clear')
 # QUESTÃO 1 - Letra A
 lista = [['Norte', 'AC', 'Porto Walter', 12, 120039, 12003, 'JURUA E TARAUACA/ENVIRA', '2020-07-01 00:00:00', 27, 11982.0, 51, 0, 0, 0, ' ', ' ', 0.0], ['Norte', 'AC', 'Marechal Thaumaturgo', 12, 120035, 12003, 'JURUA E TARAUACA/ENVIRA', '2020-07-11 00:00:00', 28, 18867.0, 202, 2, 1, 0, ' ', ' ', 0.0], ['Nordeste', 'AL', 'Joaquim Gomes', 27, 270380, 27003, '3ª REGIAO DE SAUDE', '2020-06-28 00:00:00', 27, 23993.0, 121, 0, 7, 0, ' ', ' ', 0.0], ['Nordeste', 'AL', 'Messias', 27, 270520, 27001, '1ª REGIAO DE SAUDE', '2020-05-11 00:00:00', 20, 17856.0, 2, 0, 1, 0, ' ', ' ', 1.0], ['Norte', 'AM', 'Tonantins', 13, 130423, 13009, 'ALTO SOLIMOES', '2020-05-10 00:00:00', 20, 18755.0, 80, 0, 5, 0, ' ', ' ', 0.0], ['Norte', 'AM', 'Santa Isabel do Rio Negro', 13, 130360, 13001, 'MANAUS, ENTORNO E ALTO RIO NEGRO', '2020-05-29 00:00:00', 22, 25156.0, 35, 0, 1, 0, ' ', ' ', 0.0], ['Norte', 'AP', 'Tartarugalzinho', 16, 160070, 16002, 'AREA NORTE', '2020-04-16 00:00:00', 16, 17315.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Norte', 'AP', 'Mazagão', 16, 160040, 16003, 'AREA SUDOESTE', '2020-05-24 00:00:00', 22, 21632.0, 130, 11, 2, 0, ' ', ' ', 1.0], ['Nordeste', 'BA', 'Laje', 29, 291880, 29022, 'SANTO ANTONIO DE JESUS', '2020-05-28 00:00:00', 22, 23840.0, 6, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'BA', 'Conceição do Jacuípe', 29, 290850, 29006, 'FEIRA DE SANTANA', '2020-08-19 00:00:00', 34, 33153.0, 448, 12, 1, 0, ' ', ' ', 0.0], ['Nordeste', 'CE', 'Quiterianópolis', 23, 231126, 23015, '15ª REGIAO CRATEUS', '2020-08-08 00:00:00', 32, 21084.0, 224, 6, 4, 0, ' ', ' ', 0.0], ['Nordeste', 'CE', 'Irauçuba', 23, 230610, 23011, '11ª REGIAO SOBRAL', '2020-06-23 00:00:00', 26, 24156.0, 117, 2, 11, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'DF', 'Brasília', 53, 530010, 53001, 'DISTRITO FEDERAL', '2020-07-15 00:00:00', 29, 3015268.0, 75379, 1725, 1001, 41, ' ', ' ', 1.0], ['Centro-Oeste', 'DF', 'Brasília', 53, 530010, 53001, 'DISTRITO FEDERAL', '2020-06-27 00:00:00', 26, 3015268.0, 42766, 1440, 537, 5, ' ', ' ', 1.0], ['Sudeste', 'ES', 'Anchieta', 32, 320040, 32004, 'SUL', '2020-06-17 00:00:00', 25, 29263.0, 225, 4, 4, 0, ' ', ' ', 0.0], ['Sudeste', 'ES', 'Castelo', 32, 320140, 32004, 'SUL', '2020-03-31 00:00:00', 14, 37534.0, 1, 0, 0, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'GO', 'Sanclerlândia', 52, 521900, 52010, 'OESTE II', '2020-04-15 00:00:00', 16, 7637.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'GO', 'Alto Paraíso de Goiás', 52, 520060, 52003, 'ENTORNO NORTE', '2020-06-28 00:00:00', 27, 7624.0, 6, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'MA', 'Nina Rodrigues', 21, 210720, 21009, 'ITAPECURU MIRIM', '2020-04-09 00:00:00', 15, 14454.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'MA', 'Magalhães de Almeida', 21, 210630, 21006, 'CHAPADINHA', '2020-05-27 00:00:00', 22, 19826.0, 37, 2, 0, 0, ' ', ' ', 0.0], ['Sudeste', 'MG', 'Formoso', 31, 312620, 31058, 'UNAI', '2020-04-08 00:00:00', 15, 9562.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Sudeste', 'MG', 'Soledade de Minas', 31, 316780, 31008, 'SAO LOURENCO', '2020-04-13 00:00:00', 16, 6151.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'MS', 'Coxim', 50, 500330, 50001, 'CAMPO GRANDE', '2020-05-30 00:00:00', 22, 33543.0, 7, 0, 0, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'MS', 'Três Lagoas', 50, 500830, 50004, 'TRES LAGOAS', '2020-04-24 00:00:00', 17, 121388.0, 37, 13, 3, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'MT', 'Nova Maringá', 51, 510890, 51004, 'CENTRO NORTE', '2020-06-26 00:00:00', 26, 8641.0, 7, 0, 0, 0, ' ', ' ', 0.0], ['Centro-Oeste', 'MT', 'Denise', 51, 510345, 51007, 'MEDIO NORTE MATOGROSSENSE', '2020-05-22 00:00:00', 21, 9462.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Norte', 'PA', 'Acará', 15, 150020, 15007, 'METROPOLITANA II', '2020-08-16 00:00:00', 34, 55591.0, 711, 37, 12, 0, ' ', ' ', 0.0], ['Norte', 'PA', 'Água Azul do Norte', 15, 150034, 15001, 'ARAGUAIA', '2020-07-12 00:00:00', 29, 27430.0, 201, 40, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'PB', 'Lagoa Seca', 25, 250830, 25003, '3ª REGIAO', '2020-06-21 00:00:00', 26, 27503.0, 310, 2, 3, 0, ' ', ' ', 0.0], ['Nordeste', 'PB', 'Maturéia', 25, 250939, 25006, '6ª REGIAO', '2020-04-25 00:00:00', 17, 6569.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'PE', 'Goiana', 26, 260620, 26005, 'GOIANA', '2020-06-10 00:00:00', 24, 79758.0, 517, 13, 38, 0, ' ', ' ', 1.0], ['Nordeste', 'PE', 'Flores', 26, 260560, 26012, 'SERRA TALHADA', '2020-05-26 00:00:00', 22, 22624.0, 1, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'PI', 'Gilbués', 22, 220440, 22002, 'CHAPADA DAS MANGABEIRAS', '2020-05-15 00:00:00', 20, 10690.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'PI', 'Milton Brandão', 22, 220635, 22003, 'COCAIS', '2020-07-03 00:00:00', 27, 6613.0, 4, 0, 0, 0, ' ', ' ', 0.0], ['Sul', 'PR', 'Capanema', 41, 410450, 41008, '8ª RS FRANCISCO BELTRAO', '2020-05-09 00:00:00', 19, 19124.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Sul', 'PR', 'Santo Antônio do Sudoeste', 41, 412440, 41008, '8ª RS FRANCISCO BELTRAO', '2020-06-07 00:00:00', 24, 20166.0, 1, 1, 0, 0, ' ', ' ', 0.0], ['Sudeste', 'RJ', 'Paty do Alferes', 33, 330385, 33003, 'CENTRO-SUL', '2020-07-19 00:00:00', 30, 27769.0, 60, 2, 4, 0, ' ', ' ', 0.0], ['Sudeste', 'RJ', 'Japeri', 33, 330227, 33005, 'METROPOLITANA I', '2020-05-04 00:00:00', 19, 104768.0, 37, 0, 2, 0, ' ', ' ', 1.0], ['Nordeste', 'RN', 'Caicó', 24, 240200, 24004, '4ª REGIAO DE SAUDE - CAICO', '2020-06-23 00:00:00', 26, 67952.0, 211, 1, 3, 0, ' ', ' ', 0.0], ['Nordeste', 'RN', 'Paraú', 24, 240870, 24008, '8ª REGIAO DE SAUDE - ACU', '2020-07-28 00:00:00', 31, 3768.0, 34, 1, 1, 0, ' ', ' ', 0.0], ['Norte', 'RO', 'Pimenta Bueno', 11, 110018, 11002, 'CAFE', '2020-08-03 00:00:00', 32, 36660.0, 362, 0, 7, 0, ' ', ' ', 0.0], ['Norte', 'RO', 'Pimenta Bueno', 11, 110018, 11002, 'CAFE', '2020-04-08 00:00:00', 15, 36660.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Norte', 'RR', 'Iracema', 14, 140028, 14002, 'SUL', '2020-07-24 00:00:00', 30, 11950.0, 183, 8, 4, 0, ' ', ' ', 0.0], ['Norte', 'RR', 'São Luiz', 14, 140060, 14002, 'SUL', '2020-07-05 00:00:00', 28, 7986.0, 84, 0, 1, 0, ' ', ' ', 0.0], ['Sul', 'RS', 'Dilermando de Aguiar', 43, 430637, 43001, 'REGIAO 01', '2020-05-05 00:00:00', 19, 3014.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Sul', 'RS', 'São Sebastião do Caí', 43, 431950, 43008, 'REGIAO 08', '2020-08-19 00:00:00', 34, 25685.0, 296, 3, 4, 0, ' ', ' ', 1.0], ['Sul', 'SC', 'Corupá', 42, 420450, 42011, 'NORDESTE', '2020-05-24 00:00:00', 22, 15909.0, 1, 1, 0, 0, ' ', ' ', 0.0], ['Sul', 'SC', 'Painel', 42, 421189, 42013, 'SERRA CATARINENSE', '2020-05-05 00:00:00', 19, 2359.0, 0, 0, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'SE', 'Maruim', 28, 280400, 28006, 'NOSSA SENHORA DO SOCORRO', '2020-06-06 00:00:00', 23, 17213.0, 46, 1, 0, 0, ' ', ' ', 0.0], ['Nordeste', 'SE', 'Riachão do Dantas', 28, 280580, 28004, 'LAGARTO', '2020-06-17 00:00:00', 25, 19805.0, 38, 20, 3, 0, ' ', ' ', 0.0], ['Sudeste', 'SP', 'Itaí', 35, 352180, 35061, 'VALE DO JURUMIRIM', '2020-05-05 00:00:00', 19, 27125.0, 1, 0, 0, 0, ' ', ' ', 0.0], ['Sudeste', 'SP', 'Populina', 35, 354040, 35154, 'FERNANDOPOLIS', '2020-06-09 00:00:00', 24, 4169.0, 4, 0, 0, 0, ' ', ' ', 0.0], ['Norte', 'TO', 'Abreulândia', 17, 170025, 17007, 'CANTAO', '2020-05-27 00:00:00', 22, 2579.0, 2, 0, 0, 0, ' ', ' ', 0.0], ['Norte', 'TO', 'Darcinópolis', 17, 170650, 17001, 'MEDIO NORTE ARAGUAIA', '2020-04-24 00:00:00', 17, 6097.0, 0, 0, 0, 0, ' ', ' ', 0.0]]
 tupla = (('Norte', 'AC', 'Porto Walter', 12, 120039, 12003, 'JURUA E TARAUACA/ENVIRA', '2020-07-01 00:00:00', 27, 11982.0, 51, 0, 0, 0, ' ', ' ', 0.0), ('Norte', 'AC', 'Marechal Thaumaturgo', 12, 120035, 12003, 'JURUA E TARAUACA/ENVIRA', '2020-07-11 00:00:00', 28, 18867.0, 202, 2, 1, 0, ' ', ' ', 0.0), ('Nordeste', 'AL', 'Joaquim Gomes', 27, 270380, 27003, '3ª REGIAO DE SAUDE', '2020-06-28 00:00:00', 27, 23993.0, 121, 0, 7, 0, ' ', ' ', 0.0), ('Nordeste', 'AL', 'Messias', 27, 270520, 27001, '1ª REGIAO DE SAUDE', '2020-05-11 00:00:00', 20, 17856.0, 2, 0, 1, 0, ' ', ' ', 1.0), ('Norte', 'AM', 'Tonantins', 13, 130423, 13009, 'ALTO SOLIMOES', '2020-05-10 00:00:00', 20, 18755.0, 80, 0, 5, 0, ' ', ' ', 0.0), ('Norte', 'AM', 'Santa Isabel do Rio Negro', 13, 130360, 13001, 'MANAUS, ENTORNO E ALTO RIO NEGRO', '2020-05-29 00:00:00', 22, 25156.0, 35, 0, 1, 0, ' ', ' ', 0.0), ('Norte', 'AP', 'Tartarugalzinho', 16, 160070, 16002, 'AREA NORTE', '2020-04-16 00:00:00', 16, 17315.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Norte', 'AP', 'Mazagão', 16, 160040, 16003, 'AREA SUDOESTE', '2020-05-24 00:00:00', 22, 21632.0, 130, 11, 2, 0, ' ', ' ', 1.0), ('Nordeste', 'BA', 'Laje', 29, 291880, 29022, 'SANTO ANTONIO DE JESUS', '2020-05-28 00:00:00', 22, 23840.0, 6, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'BA', 'Conceição do Jacuípe', 29, 290850, 29006, 'FEIRA DE SANTANA', '2020-08-19 00:00:00', 34, 33153.0, 448, 12, 1, 0, ' ', ' ', 0.0), ('Nordeste', 'CE', 'Quiterianópolis', 23, 231126, 23015, '15ª REGIAO CRATEUS', '2020-08-08 00:00:00', 32, 21084.0, 224, 6, 4, 0, ' ', ' ', 0.0), ('Nordeste', 'CE', 'Irauçuba', 23, 230610, 23011, '11ª REGIAO SOBRAL', '2020-06-23 00:00:00', 26, 24156.0, 117, 2, 11, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'DF', 'Brasília', 53, 530010, 53001, 'DISTRITO FEDERAL', '2020-07-15 00:00:00', 29, 3015268.0, 75379, 1725, 1001, 41, ' ', ' ', 1.0), ('Centro-Oeste', 'DF', 'Brasília', 53, 530010, 53001, 'DISTRITO FEDERAL', '2020-06-27 00:00:00', 26, 3015268.0, 42766, 1440, 537, 5, ' ', ' ', 1.0), ('Sudeste', 'ES', 'Anchieta', 32, 320040, 32004, 'SUL', '2020-06-17 00:00:00', 25, 29263.0, 225, 4, 4, 0, ' ', ' ', 0.0), ('Sudeste', 'ES', 'Castelo', 32, 320140, 32004, 'SUL', '2020-03-31 00:00:00', 14, 37534.0, 1, 0, 0, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'GO', 'Sanclerlândia', 52, 521900, 52010, 'OESTE II', '2020-04-15 00:00:00', 16, 7637.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'GO', 'Alto Paraíso de Goiás', 52, 520060, 52003, 'ENTORNO NORTE', '2020-06-28 00:00:00', 27, 7624.0, 6, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'MA', 'Nina Rodrigues', 21, 210720, 21009, 'ITAPECURU MIRIM', '2020-04-09 00:00:00', 15, 14454.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'MA', 'Magalhães de Almeida', 21, 210630, 21006, 'CHAPADINHA', '2020-05-27 00:00:00', 22, 19826.0, 37, 2, 0, 0, ' ', ' ', 0.0), ('Sudeste', 'MG', 'Formoso', 31, 312620, 31058, 'UNAI', '2020-04-08 00:00:00', 15, 9562.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Sudeste', 'MG', 'Soledade de Minas', 31, 316780, 31008, 'SAO LOURENCO', '2020-04-13 00:00:00', 16, 6151.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'MS', 'Coxim', 50, 500330, 50001, 'CAMPO GRANDE', '2020-05-30 00:00:00', 22, 33543.0, 7, 0, 0, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'MS', 'Três Lagoas', 50, 500830, 50004, 'TRES LAGOAS', '2020-04-24 00:00:00', 17, 121388.0, 37, 13, 3, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'MT', 'Nova Maringá', 51, 510890, 51004, 'CENTRO NORTE', '2020-06-26 00:00:00', 26, 8641.0, 7, 0, 0, 0, ' ', ' ', 0.0), ('Centro-Oeste', 'MT', 'Denise', 51, 510345, 51007, 'MEDIO NORTE MATOGROSSENSE', '2020-05-22 00:00:00', 21, 9462.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Norte', 'PA', 'Acará', 15, 150020, 15007, 'METROPOLITANA II', '2020-08-16 00:00:00', 34, 55591.0, 711, 37, 12, 0, ' ', ' ', 0.0), ('Norte', 'PA', 'Água Azul do Norte', 15, 150034, 15001, 'ARAGUAIA', '2020-07-12 00:00:00', 29, 27430.0, 201, 40, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'PB', 'Lagoa Seca', 25, 250830, 25003, '3ª REGIAO', '2020-06-21 00:00:00', 26, 27503.0, 310, 2, 3, 0, ' ', ' ', 0.0), ('Nordeste', 'PB', 'Maturéia', 25, 250939, 25006, '6ª REGIAO', '2020-04-25 00:00:00', 17, 6569.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'PE', 'Goiana', 26, 260620, 26005, 'GOIANA', '2020-06-10 00:00:00', 24, 79758.0, 517, 13, 38, 0, ' ', ' ', 1.0), ('Nordeste', 'PE', 'Flores', 26, 260560, 26012, 'SERRA TALHADA', '2020-05-26 00:00:00', 22, 22624.0, 1, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'PI', 'Gilbués', 22, 220440, 22002, 'CHAPADA DAS MANGABEIRAS', '2020-05-15 00:00:00', 20, 10690.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'PI', 'Milton Brandão', 22, 220635, 22003, 'COCAIS', '2020-07-03 00:00:00', 27, 6613.0, 4, 0, 0, 0, ' ', ' ', 0.0), ('Sul', 'PR', 'Capanema', 41, 410450, 41008, '8ª RS FRANCISCO BELTRAO', '2020-05-09 00:00:00', 19, 19124.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Sul', 'PR', 'Santo Antônio do Sudoeste', 41, 412440, 41008, '8ª RS FRANCISCO BELTRAO', '2020-06-07 00:00:00', 24, 20166.0, 1, 1, 0, 0, ' ', ' ', 0.0), ('Sudeste', 'RJ', 'Paty do Alferes', 33, 330385, 33003, 'CENTRO-SUL', '2020-07-19 00:00:00', 30, 27769.0, 60, 2, 4, 0, ' ', ' ', 0.0), ('Sudeste', 'RJ', 'Japeri', 33, 330227, 33005, 'METROPOLITANA I', '2020-05-04 00:00:00', 19, 104768.0, 37, 0, 2, 0, ' ', ' ', 1.0), ('Nordeste', 'RN', 'Caicó', 24, 240200, 24004, '4ª REGIAO DE SAUDE - CAICO', '2020-06-23 00:00:00', 26, 67952.0, 211, 1, 3, 0, ' ', ' ', 0.0), ('Nordeste', 'RN', 'Paraú', 24, 240870, 24008, '8ª REGIAO DE SAUDE - ACU', '2020-07-28 00:00:00', 31, 3768.0, 34, 1, 1, 0, ' ', ' ', 0.0), ('Norte', 'RO', 'Pimenta Bueno', 11, 110018, 11002, 'CAFE', '2020-08-03 00:00:00', 32, 36660.0, 362, 0, 7, 0, ' ', ' ', 0.0), ('Norte', 'RO', 'Pimenta Bueno', 11, 110018, 11002, 'CAFE', '2020-04-08 00:00:00', 15, 36660.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Norte', 'RR', 'Iracema', 14, 140028, 14002, 'SUL', '2020-07-24 00:00:00', 30, 11950.0, 183, 8, 4, 0, ' ', ' ', 0.0), ('Norte', 'RR', 'São Luiz', 14, 140060, 14002, 'SUL', '2020-07-05 00:00:00', 28, 7986.0, 84, 0, 1, 0, ' ', ' ', 0.0), ('Sul', 'RS', 'Dilermando de Aguiar', 43, 430637, 43001, 'REGIAO 01', '2020-05-05 00:00:00', 19, 3014.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Sul', 'RS', 'São Sebastião do Caí', 43, 431950, 43008, 'REGIAO 08', '2020-08-19 00:00:00', 34, 25685.0, 296, 3, 4, 0, ' ', ' ', 1.0), ('Sul', 'SC', 'Corupá', 42, 420450, 42011, 'NORDESTE', '2020-05-24 00:00:00', 22, 15909.0, 1, 1, 0, 0, ' ', ' ', 0.0), ('Sul', 'SC', 'Painel', 42, 421189, 42013, 'SERRA CATARINENSE', '2020-05-05 00:00:00', 19, 2359.0, 0, 0, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'SE', 'Maruim', 28, 280400, 28006, 'NOSSA SENHORA DO SOCORRO', '2020-06-06 00:00:00', 23, 17213.0, 46, 1, 0, 0, ' ', ' ', 0.0), ('Nordeste', 'SE', 'Riachão do Dantas', 28, 280580, 28004, 'LAGARTO', '2020-06-17 00:00:00', 25, 19805.0, 38, 20, 3, 0, ' ', ' ', 0.0), ('Sudeste', 'SP', 'Itaí', 35, 352180, 35061, 'VALE DO JURUMIRIM', '2020-05-05 00:00:00', 19, 27125.0, 1, 0, 0, 0, ' ', ' ', 0.0), ('Sudeste', 'SP', 'Populina', 35, 354040, 35154, 'FERNANDOPOLIS', '2020-06-09 00:00:00', 24, 4169.0, 4, 0, 0, 0, ' ', ' ', 0.0), ('Norte', 'TO', 'Abreulândia', 17, 170025, 17007, 'CANTAO', '2020-05-27 00:00:00', 22, 2579.0, 2, 0, 0, 0, ' ', ' ', 0.0), ('Norte', 'TO', 'Darcinópolis', 17, 170650, 17001, 'MEDIO NORTE ARAGUAIA', '2020-04-24 00:00:00', 17, 6097.0, 0, 0, 0, 0, ' ', ' ', 0.0))
+print('Dados armazenados em lista e tupla.')
 # FIM QUESTÃO 1 - Letra A
 
 # QUESTÃO 1 - Letra B
@@ -54,7 +55,13 @@ print(lista[52][1], ':', lista[52][10] + lista[53][10])
 # QUESTÃO 01 - LETRA D
 print('\nNovos óbitos na',lista[28][1],'(',lista[28][2],')',':',lista[28][13],'[ANTES DA CORREÇÃO]')
 print('Novos óbitos na',lista[29][1],'(',lista[29][2],')',':',lista[29][13],'[ANTES DA CORREÇÃO]')
+lista[28][10] += 10
+lista[28][11] += 10
+lista[28][12] += 10
 lista[28][13] += 10
+lista[29][10] += 10
+lista[29][11] += 10
+lista[29][12] += 10
 lista[29][13] += 10
 print('\nNovos óbitos na',lista[28][1],'(',lista[28][2],')',':',lista[28][13],'[DEPOIS DA CORREÇÃO]')
 print('Novos óbitos na',lista[29][1],'(',lista[29][2],')',':',lista[29][13],'[DEPOIS DA CORREÇÃO]')
@@ -369,17 +376,1335 @@ else:
 print('Tamanho da lista: ',len(lista))
 # FIM QUESTAO 01 - LETRA I
 
-'''
-# QUESTÃO 01 - LETRA J
-saida = list()
-for x in lista:
-  if(x != lista[len(lista) - 1]):
-    saida.append(x[12])
 
-print('Num de obtidos novos (max):', max(saida))
-print('Num de obtidos novos (min):', min(saida))
+# QUESTÃO 01 - LETRA J
+maiorObitosNovos = lista[0][12]
+menorObitosNovos = lista[0][12]
+
+if maiorObitosNovos < lista[ 0 ][12]: maiorObitosNovos = lista[ 0 ][12]
+if menorObitosNovos > lista[ 0 ][12]: menorObitosNovos = lista[ 0 ][12]
+
+if maiorObitosNovos < lista[ 1 ][12]: maiorObitosNovos = lista[ 1 ][12]
+if menorObitosNovos > lista[ 1 ][12]: menorObitosNovos = lista[ 1 ][12]
+
+if maiorObitosNovos < lista[ 2 ][12]: maiorObitosNovos = lista[ 2 ][12]
+if menorObitosNovos > lista[ 2 ][12]: menorObitosNovos = lista[ 2 ][12]
+
+if maiorObitosNovos < lista[ 3 ][12]: maiorObitosNovos = lista[ 3 ][12]
+if menorObitosNovos > lista[ 3 ][12]: menorObitosNovos = lista[ 3 ][12]
+
+if maiorObitosNovos < lista[ 4 ][12]: maiorObitosNovos = lista[ 4 ][12]
+if menorObitosNovos > lista[ 4 ][12]: menorObitosNovos = lista[ 4 ][12]
+
+if maiorObitosNovos < lista[ 5 ][12]: maiorObitosNovos = lista[ 5 ][12]
+if menorObitosNovos > lista[ 5 ][12]: menorObitosNovos = lista[ 5 ][12]
+
+if maiorObitosNovos < lista[ 6 ][12]: maiorObitosNovos = lista[ 6 ][12]
+if menorObitosNovos > lista[ 6 ][12]: menorObitosNovos = lista[ 6 ][12]
+
+if maiorObitosNovos < lista[ 7 ][12]: maiorObitosNovos = lista[ 7 ][12]
+if menorObitosNovos > lista[ 7 ][12]: menorObitosNovos = lista[ 7 ][12]
+
+if maiorObitosNovos < lista[ 8 ][12]: maiorObitosNovos = lista[ 8 ][12]
+if menorObitosNovos > lista[ 8 ][12]: menorObitosNovos = lista[ 8 ][12]
+
+if maiorObitosNovos < lista[ 9 ][12]: maiorObitosNovos = lista[ 9 ][12]
+if menorObitosNovos > lista[ 9 ][12]: menorObitosNovos = lista[ 9 ][12]
+
+if maiorObitosNovos < lista[ 10 ][12]: maiorObitosNovos = lista[ 10 ][12]
+if menorObitosNovos > lista[ 10 ][12]: menorObitosNovos = lista[ 10 ][12]
+
+if maiorObitosNovos < lista[ 11 ][12]: maiorObitosNovos = lista[ 11 ][12]
+if menorObitosNovos > lista[ 11 ][12]: menorObitosNovos = lista[ 11 ][12]
+
+if maiorObitosNovos < lista[ 12 ][12]: maiorObitosNovos = lista[ 12 ][12]
+if menorObitosNovos > lista[ 12 ][12]: menorObitosNovos = lista[ 12 ][12]
+
+if maiorObitosNovos < lista[ 13 ][12]: maiorObitosNovos = lista[ 13 ][12]
+if menorObitosNovos > lista[ 13 ][12]: menorObitosNovos = lista[ 13 ][12]
+
+if maiorObitosNovos < lista[ 14 ][12]: maiorObitosNovos = lista[ 14 ][12]
+if menorObitosNovos > lista[ 14 ][12]: menorObitosNovos = lista[ 14 ][12]
+
+if maiorObitosNovos < lista[ 15 ][12]: maiorObitosNovos = lista[ 15 ][12]
+if menorObitosNovos > lista[ 15 ][12]: menorObitosNovos = lista[ 15 ][12]
+
+if maiorObitosNovos < lista[ 16 ][12]: maiorObitosNovos = lista[ 16 ][12]
+if menorObitosNovos > lista[ 16 ][12]: menorObitosNovos = lista[ 16 ][12]
+
+if maiorObitosNovos < lista[ 17 ][12]: maiorObitosNovos = lista[ 17 ][12]
+if menorObitosNovos > lista[ 17 ][12]: menorObitosNovos = lista[ 17 ][12]
+
+if maiorObitosNovos < lista[ 18 ][12]: maiorObitosNovos = lista[ 18 ][12]
+if menorObitosNovos > lista[ 18 ][12]: menorObitosNovos = lista[ 18 ][12]
+
+if maiorObitosNovos < lista[ 19 ][12]: maiorObitosNovos = lista[ 19 ][12]
+if menorObitosNovos > lista[ 19 ][12]: menorObitosNovos = lista[ 19 ][12]
+
+if maiorObitosNovos < lista[ 20 ][12]: maiorObitosNovos = lista[ 20 ][12]
+if menorObitosNovos > lista[ 20 ][12]: menorObitosNovos = lista[ 20 ][12]
+
+if maiorObitosNovos < lista[ 21 ][12]: maiorObitosNovos = lista[ 21 ][12]
+if menorObitosNovos > lista[ 21 ][12]: menorObitosNovos = lista[ 21 ][12]
+
+if maiorObitosNovos < lista[ 22 ][12]: maiorObitosNovos = lista[ 22 ][12]
+if menorObitosNovos > lista[ 22 ][12]: menorObitosNovos = lista[ 22 ][12]
+
+if maiorObitosNovos < lista[ 23 ][12]: maiorObitosNovos = lista[ 23 ][12]
+if menorObitosNovos > lista[ 23 ][12]: menorObitosNovos = lista[ 23 ][12]
+
+if maiorObitosNovos < lista[ 24 ][12]: maiorObitosNovos = lista[ 24 ][12]
+if menorObitosNovos > lista[ 24 ][12]: menorObitosNovos = lista[ 24 ][12]
+
+if maiorObitosNovos < lista[ 25 ][12]: maiorObitosNovos = lista[ 25 ][12]
+if menorObitosNovos > lista[ 25 ][12]: menorObitosNovos = lista[ 25 ][12]
+
+if maiorObitosNovos < lista[ 26 ][12]: maiorObitosNovos = lista[ 26 ][12]
+if menorObitosNovos > lista[ 26 ][12]: menorObitosNovos = lista[ 26 ][12]
+
+if maiorObitosNovos < lista[ 27 ][12]: maiorObitosNovos = lista[ 27 ][12]
+if menorObitosNovos > lista[ 27 ][12]: menorObitosNovos = lista[ 27 ][12]
+
+if maiorObitosNovos < lista[ 28 ][12]: maiorObitosNovos = lista[ 28 ][12]
+if menorObitosNovos > lista[ 28 ][12]: menorObitosNovos = lista[ 28 ][12]
+
+if maiorObitosNovos < lista[ 29 ][12]: maiorObitosNovos = lista[ 29 ][12]
+if menorObitosNovos > lista[ 29 ][12]: menorObitosNovos = lista[ 29 ][12]
+
+if maiorObitosNovos < lista[ 30 ][12]: maiorObitosNovos = lista[ 30 ][12]
+if menorObitosNovos > lista[ 30 ][12]: menorObitosNovos = lista[ 30 ][12]
+
+if maiorObitosNovos < lista[ 31 ][12]: maiorObitosNovos = lista[ 31 ][12]
+if menorObitosNovos > lista[ 31 ][12]: menorObitosNovos = lista[ 31 ][12]
+
+if maiorObitosNovos < lista[ 32 ][12]: maiorObitosNovos = lista[ 32 ][12]
+if menorObitosNovos > lista[ 32 ][12]: menorObitosNovos = lista[ 32 ][12]
+
+if maiorObitosNovos < lista[ 33 ][12]: maiorObitosNovos = lista[ 33 ][12]
+if menorObitosNovos > lista[ 33 ][12]: menorObitosNovos = lista[ 33 ][12]
+
+if maiorObitosNovos < lista[ 34 ][12]: maiorObitosNovos = lista[ 34 ][12]
+if menorObitosNovos > lista[ 34 ][12]: menorObitosNovos = lista[ 34 ][12]
+
+if maiorObitosNovos < lista[ 35 ][12]: maiorObitosNovos = lista[ 35 ][12]
+if menorObitosNovos > lista[ 35 ][12]: menorObitosNovos = lista[ 35 ][12]
+
+if maiorObitosNovos < lista[ 36 ][12]: maiorObitosNovos = lista[ 36 ][12]
+if menorObitosNovos > lista[ 36 ][12]: menorObitosNovos = lista[ 36 ][12]
+
+if maiorObitosNovos < lista[ 37 ][12]: maiorObitosNovos = lista[ 37 ][12]
+if menorObitosNovos > lista[ 37 ][12]: menorObitosNovos = lista[ 37 ][12]
+
+if maiorObitosNovos < lista[ 38 ][12]: maiorObitosNovos = lista[ 38 ][12]
+if menorObitosNovos > lista[ 38 ][12]: menorObitosNovos = lista[ 38 ][12]
+
+if maiorObitosNovos < lista[ 39 ][12]: maiorObitosNovos = lista[ 39 ][12]
+if menorObitosNovos > lista[ 39 ][12]: menorObitosNovos = lista[ 39 ][12]
+
+if maiorObitosNovos < lista[ 40 ][12]: maiorObitosNovos = lista[ 40 ][12]
+if menorObitosNovos > lista[ 40 ][12]: menorObitosNovos = lista[ 40 ][12]
+
+if maiorObitosNovos < lista[ 41 ][12]: maiorObitosNovos = lista[ 41 ][12]
+if menorObitosNovos > lista[ 41 ][12]: menorObitosNovos = lista[ 41 ][12]
+
+if maiorObitosNovos < lista[ 42 ][12]: maiorObitosNovos = lista[ 42 ][12]
+if menorObitosNovos > lista[ 42 ][12]: menorObitosNovos = lista[ 42 ][12]
+
+if maiorObitosNovos < lista[ 43 ][12]: maiorObitosNovos = lista[ 43 ][12]
+if menorObitosNovos > lista[ 43 ][12]: menorObitosNovos = lista[ 43 ][12]
+
+if maiorObitosNovos < lista[ 44 ][12]: maiorObitosNovos = lista[ 44 ][12]
+if menorObitosNovos > lista[ 44 ][12]: menorObitosNovos = lista[ 44 ][12]
+
+if maiorObitosNovos < lista[ 45 ][12]: maiorObitosNovos = lista[ 45 ][12]
+if menorObitosNovos > lista[ 45 ][12]: menorObitosNovos = lista[ 45 ][12]
+
+if maiorObitosNovos < lista[ 46 ][12]: maiorObitosNovos = lista[ 46 ][12]
+if menorObitosNovos > lista[ 46 ][12]: menorObitosNovos = lista[ 46 ][12]
+
+if maiorObitosNovos < lista[ 47 ][12]: maiorObitosNovos = lista[ 47 ][12]
+if menorObitosNovos > lista[ 47 ][12]: menorObitosNovos = lista[ 47 ][12]
+
+if maiorObitosNovos < lista[ 48 ][12]: maiorObitosNovos = lista[ 48 ][12]
+if menorObitosNovos > lista[ 48 ][12]: menorObitosNovos = lista[ 48 ][12]
+
+if maiorObitosNovos < lista[ 49 ][12]: maiorObitosNovos = lista[ 49 ][12]
+if menorObitosNovos > lista[ 49 ][12]: menorObitosNovos = lista[ 49 ][12]
+
+if maiorObitosNovos < lista[ 50 ][12]: maiorObitosNovos = lista[ 50 ][12]
+if menorObitosNovos > lista[ 50 ][12]: menorObitosNovos = lista[ 50 ][12]
+
+if maiorObitosNovos < lista[ 51 ][12]: maiorObitosNovos = lista[ 51 ][12]
+if menorObitosNovos > lista[ 51 ][12]: menorObitosNovos = lista[ 51 ][12]
+
+if maiorObitosNovos < lista[ 52 ][12]: maiorObitosNovos = lista[ 52 ][12]
+if menorObitosNovos > lista[ 52 ][12]: menorObitosNovos = lista[ 52 ][12]
+
+if maiorObitosNovos < lista[ 53 ][12]: maiorObitosNovos = lista[ 53 ][12]
+if menorObitosNovos > lista[ 53 ][12]: menorObitosNovos = lista[ 53 ][12]
+
+if maiorObitosNovos < lista[54][0][12]:
+  maiorObitosNovos = lista[54][0][12]
+if menorObitosNovos > lista[54][0][12]:
+  menorObitosNovos = lista[54][0][12]
+
+if maiorObitosNovos < lista[54][1][12]:
+  maiorObitosNovos = lista[54][1][12]
+if menorObitosNovos > lista[54][1][12]:
+  menorObitosNovos = lista[54][1][12]
+
+if maiorObitosNovos < lista[54][2][12]:
+  maiorObitosNovos = lista[54][2][12]
+if menorObitosNovos > lista[54][2][12]:
+  menorObitosNovos = lista[54][2][12]
+
+if maiorObitosNovos < lista[54][3][12]:
+  maiorObitosNovos = lista[54][3][12]
+if menorObitosNovos > lista[54][3][12]:
+  menorObitosNovos = lista[54][3][12]
+
+if maiorObitosNovos < lista[54][4][12]:
+  maiorObitosNovos = lista[54][4][12]
+if menorObitosNovos > lista[54][4][12]:
+  menorObitosNovos = lista[54][4][12]
+
+if maiorObitosNovos < lista[54][5][12]:
+  maiorObitosNovos = lista[54][5][12]
+if menorObitosNovos > lista[54][5][12]:
+  menorObitosNovos = lista[54][5][12]
+
+if maiorObitosNovos < lista[54][6][12]:
+  maiorObitosNovos = lista[54][6][12]
+if menorObitosNovos > lista[54][6][12]:
+  menorObitosNovos = lista[54][6][12]
+
+if maiorObitosNovos < lista[54][7][12]:
+  maiorObitosNovos = lista[54][7][12]
+if menorObitosNovos > lista[54][7][12]:
+  menorObitosNovos = lista[54][7][12]
+
+if maiorObitosNovos < lista[54][8][12]:
+  maiorObitosNovos = lista[54][8][12]
+if menorObitosNovos > lista[54][8][12]:
+  menorObitosNovos = lista[54][8][12]
+
+if maiorObitosNovos < lista[54][9][12]:
+  maiorObitosNovos = lista[54][9][12]
+if menorObitosNovos > lista[54][9][12]:
+  menorObitosNovos = lista[54][9][12]
+
+if maiorObitosNovos < lista[54][10][12]:
+  maiorObitosNovos = lista[54][10][12]
+if menorObitosNovos > lista[54][10][12]:
+  menorObitosNovos = lista[54][10][12]
+
+if maiorObitosNovos < lista[54][11][12]:
+  maiorObitosNovos = lista[54][11][12]
+if menorObitosNovos > lista[54][11][12]:
+  menorObitosNovos = lista[54][11][12]
+
+if maiorObitosNovos < lista[54][12][12]:
+  maiorObitosNovos = lista[54][12][12]
+if menorObitosNovos > lista[54][12][12]:
+  menorObitosNovos = lista[54][12][12]
+
+if maiorObitosNovos < lista[54][13][12]:
+  maiorObitosNovos = lista[54][13][12]
+if menorObitosNovos > lista[54][13][12]:
+  menorObitosNovos = lista[54][13][12]
+
+if maiorObitosNovos < lista[54][14][12]:
+  maiorObitosNovos = lista[54][14][12]
+if menorObitosNovos > lista[54][14][12]:
+  menorObitosNovos = lista[54][14][12]
+
+if maiorObitosNovos < lista[54][15][12]:
+  maiorObitosNovos = lista[54][15][12]
+if menorObitosNovos > lista[54][15][12]:
+  menorObitosNovos = lista[54][15][12]
+
+if maiorObitosNovos < lista[54][16][12]:
+  maiorObitosNovos = lista[54][16][12]
+if menorObitosNovos > lista[54][16][12]:
+  menorObitosNovos = lista[54][16][12]
+
+if maiorObitosNovos < lista[54][17][12]:
+  maiorObitosNovos = lista[54][17][12]
+if menorObitosNovos > lista[54][17][12]:
+  menorObitosNovos = lista[54][17][12]
+
+if maiorObitosNovos < lista[54][18][12]:
+  maiorObitosNovos = lista[54][18][12]
+if menorObitosNovos > lista[54][18][12]:
+  menorObitosNovos = lista[54][18][12]
+
+if maiorObitosNovos < lista[54][19][12]:
+  maiorObitosNovos = lista[54][19][12]
+if menorObitosNovos > lista[54][19][12]:
+  menorObitosNovos = lista[54][19][12]
+
+if maiorObitosNovos < lista[54][20][12]:
+  maiorObitosNovos = lista[54][20][12]
+if menorObitosNovos > lista[54][20][12]:
+  menorObitosNovos = lista[54][20][12]
+
+if maiorObitosNovos < lista[54][21][12]:
+  maiorObitosNovos = lista[54][21][12]
+if menorObitosNovos > lista[54][21][12]:
+  menorObitosNovos = lista[54][21][12]
+
+if maiorObitosNovos < lista[54][22][12]:
+  maiorObitosNovos = lista[54][22][12]
+if menorObitosNovos > lista[54][22][12]:
+  menorObitosNovos = lista[54][22][12]
+
+if maiorObitosNovos < lista[54][23][12]:
+  maiorObitosNovos = lista[54][23][12]
+if menorObitosNovos > lista[54][23][12]:
+  menorObitosNovos = lista[54][23][12]
+
+if maiorObitosNovos < lista[54][24][12]:
+  maiorObitosNovos = lista[54][24][12]
+if menorObitosNovos > lista[54][24][12]:
+  menorObitosNovos = lista[54][24][12]
+
+if maiorObitosNovos < lista[54][25][12]:
+  maiorObitosNovos = lista[54][25][12]
+if menorObitosNovos > lista[54][25][12]:
+  menorObitosNovos = lista[54][25][12]
+
+if maiorObitosNovos < lista[54][26][12]:
+  maiorObitosNovos = lista[54][26][12]
+if menorObitosNovos > lista[54][26][12]:
+  menorObitosNovos = lista[54][26][12]
+
+if maiorObitosNovos < lista[54][27][12]:
+  maiorObitosNovos = lista[54][27][12]
+if menorObitosNovos > lista[54][27][12]:
+  menorObitosNovos = lista[54][27][12]
+
+if maiorObitosNovos < lista[54][28][12]:
+  maiorObitosNovos = lista[54][28][12]
+if menorObitosNovos > lista[54][28][12]:
+  menorObitosNovos = lista[54][28][12]
+
+if maiorObitosNovos < lista[54][29][12]:
+  maiorObitosNovos = lista[54][29][12]
+if menorObitosNovos > lista[54][29][12]:
+  menorObitosNovos = lista[54][29][12]
+
+if maiorObitosNovos < lista[54][30][12]:
+  maiorObitosNovos = lista[54][30][12]
+if menorObitosNovos > lista[54][30][12]:
+  menorObitosNovos = lista[54][30][12]
+
+if maiorObitosNovos < lista[54][31][12]:
+  maiorObitosNovos = lista[54][31][12]
+if menorObitosNovos > lista[54][31][12]:
+  menorObitosNovos = lista[54][31][12]
+
+if maiorObitosNovos < lista[54][32][12]:
+  maiorObitosNovos = lista[54][32][12]
+if menorObitosNovos > lista[54][32][12]:
+  menorObitosNovos = lista[54][32][12]
+
+if maiorObitosNovos < lista[54][33][12]:
+  maiorObitosNovos = lista[54][33][12]
+if menorObitosNovos > lista[54][33][12]:
+  menorObitosNovos = lista[54][33][12]
+
+if maiorObitosNovos < lista[54][34][12]:
+  maiorObitosNovos = lista[54][34][12]
+if menorObitosNovos > lista[54][34][12]:
+  menorObitosNovos = lista[54][34][12]
+
+if maiorObitosNovos < lista[54][35][12]:
+  maiorObitosNovos = lista[54][35][12]
+if menorObitosNovos > lista[54][35][12]:
+  menorObitosNovos = lista[54][35][12]
+
+if maiorObitosNovos < lista[54][36][12]:
+  maiorObitosNovos = lista[54][36][12]
+if menorObitosNovos > lista[54][36][12]:
+  menorObitosNovos = lista[54][36][12]
+
+if maiorObitosNovos < lista[54][37][12]:
+  maiorObitosNovos = lista[54][37][12]
+if menorObitosNovos > lista[54][37][12]:
+  menorObitosNovos = lista[54][37][12]
+
+if maiorObitosNovos < lista[54][38][12]:
+  maiorObitosNovos = lista[54][38][12]
+if menorObitosNovos > lista[54][38][12]:
+  menorObitosNovos = lista[54][38][12]
+
+if maiorObitosNovos < lista[54][39][12]:
+  maiorObitosNovos = lista[54][39][12]
+if menorObitosNovos > lista[54][39][12]:
+  menorObitosNovos = lista[54][39][12]
+
+if maiorObitosNovos < lista[54][40][12]:
+  maiorObitosNovos = lista[54][40][12]
+if menorObitosNovos > lista[54][40][12]:
+  menorObitosNovos = lista[54][40][12]
+
+if maiorObitosNovos < lista[54][41][12]:
+  maiorObitosNovos = lista[54][41][12]
+if menorObitosNovos > lista[54][41][12]:
+  menorObitosNovos = lista[54][41][12]
+
+if maiorObitosNovos < lista[54][42][12]:
+  maiorObitosNovos = lista[54][42][12]
+if menorObitosNovos > lista[54][42][12]:
+  menorObitosNovos = lista[54][42][12]
+
+if maiorObitosNovos < lista[54][43][12]:
+  maiorObitosNovos = lista[54][43][12]
+if menorObitosNovos > lista[54][43][12]:
+  menorObitosNovos = lista[54][43][12]
+
+if maiorObitosNovos < lista[54][44][12]:
+  maiorObitosNovos = lista[54][44][12]
+if menorObitosNovos > lista[54][44][12]:
+  menorObitosNovos = lista[54][44][12]
+
+if maiorObitosNovos < lista[54][45][12]:
+  maiorObitosNovos = lista[54][45][12]
+if menorObitosNovos > lista[54][45][12]:
+  menorObitosNovos = lista[54][45][12]
+
+if maiorObitosNovos < lista[54][46][12]:
+  maiorObitosNovos = lista[54][46][12]
+if menorObitosNovos > lista[54][46][12]:
+  menorObitosNovos = lista[54][46][12]
+
+if maiorObitosNovos < lista[54][47][12]:
+  maiorObitosNovos = lista[54][47][12]
+if menorObitosNovos > lista[54][47][12]:
+  menorObitosNovos = lista[54][47][12]
+
+if maiorObitosNovos < lista[54][48][12]:
+  maiorObitosNovos = lista[54][48][12]
+if menorObitosNovos > lista[54][48][12]:
+  menorObitosNovos = lista[54][48][12]
+
+if maiorObitosNovos < lista[54][49][12]:
+  maiorObitosNovos = lista[54][49][12]
+if menorObitosNovos > lista[54][49][12]:
+  menorObitosNovos = lista[54][49][12]
+
+if maiorObitosNovos < lista[54][50][12]:
+  maiorObitosNovos = lista[54][50][12]
+if menorObitosNovos > lista[54][50][12]:
+  menorObitosNovos = lista[54][50][12]
+
+if maiorObitosNovos < lista[54][51][12]:
+  maiorObitosNovos = lista[54][51][12]
+if menorObitosNovos > lista[54][51][12]:
+  menorObitosNovos = lista[54][51][12]
+
+if maiorObitosNovos < lista[54][52][12]:
+  maiorObitosNovos = lista[54][52][12]
+if menorObitosNovos > lista[54][52][12]:
+  menorObitosNovos = lista[54][52][12]
+
+if maiorObitosNovos < lista[54][53][12]:
+  maiorObitosNovos = lista[54][53][12]
+if menorObitosNovos > lista[54][53][12]:
+  menorObitosNovos = lista[54][53][12]
+
+if maiorObitosNovos < lista[54][54][12]:
+  maiorObitosNovos = lista[54][54][12]
+if menorObitosNovos > lista[54][54][12]:
+  menorObitosNovos = lista[54][54][12]
+
+if maiorObitosNovos < lista[54][55][12]:
+  maiorObitosNovos = lista[54][55][12]
+if menorObitosNovos > lista[54][55][12]:
+  menorObitosNovos = lista[54][55][12]
+
+if maiorObitosNovos < lista[54][56][12]:
+  maiorObitosNovos = lista[54][56][12]
+if menorObitosNovos > lista[54][56][12]:
+  menorObitosNovos = lista[54][56][12]
+
+if maiorObitosNovos < lista[54][57][12]:
+  maiorObitosNovos = lista[54][57][12]
+if menorObitosNovos > lista[54][57][12]:
+  menorObitosNovos = lista[54][57][12]
+
+if maiorObitosNovos < lista[54][58][12]:
+  maiorObitosNovos = lista[54][58][12]
+if menorObitosNovos > lista[54][58][12]:
+  menorObitosNovos = lista[54][58][12]
+
+if maiorObitosNovos < lista[54][59][12]:
+  maiorObitosNovos = lista[54][59][12]
+if menorObitosNovos > lista[54][59][12]:
+  menorObitosNovos = lista[54][59][12]
+
+if maiorObitosNovos < lista[54][60][12]:
+  maiorObitosNovos = lista[54][60][12]
+if menorObitosNovos > lista[54][60][12]:
+  menorObitosNovos = lista[54][60][12]
+
+if maiorObitosNovos < lista[54][61][12]:
+  maiorObitosNovos = lista[54][61][12]
+if menorObitosNovos > lista[54][61][12]:
+  menorObitosNovos = lista[54][61][12]
+
+if maiorObitosNovos < lista[54][62][12]:
+  maiorObitosNovos = lista[54][62][12]
+if menorObitosNovos > lista[54][62][12]:
+  menorObitosNovos = lista[54][62][12]
+
+if maiorObitosNovos < lista[54][63][12]:
+  maiorObitosNovos = lista[54][63][12]
+if menorObitosNovos > lista[54][63][12]:
+  menorObitosNovos = lista[54][63][12]
+
+if maiorObitosNovos < lista[54][64][12]:
+  maiorObitosNovos = lista[54][64][12]
+if menorObitosNovos > lista[54][64][12]:
+  menorObitosNovos = lista[54][64][12]
+
+if maiorObitosNovos < lista[54][65][12]:
+  maiorObitosNovos = lista[54][65][12]
+if menorObitosNovos > lista[54][65][12]:
+  menorObitosNovos = lista[54][65][12]
+
+if maiorObitosNovos < lista[54][66][12]:
+  maiorObitosNovos = lista[54][66][12]
+if menorObitosNovos > lista[54][66][12]:
+  menorObitosNovos = lista[54][66][12]
+
+if maiorObitosNovos < lista[54][67][12]:
+  maiorObitosNovos = lista[54][67][12]
+if menorObitosNovos > lista[54][67][12]:
+  menorObitosNovos = lista[54][67][12]
+
+if maiorObitosNovos < lista[54][68][12]:
+  maiorObitosNovos = lista[54][68][12]
+if menorObitosNovos > lista[54][68][12]:
+  menorObitosNovos = lista[54][68][12]
+
+if maiorObitosNovos < lista[54][69][12]:
+  maiorObitosNovos = lista[54][69][12]
+if menorObitosNovos > lista[54][69][12]:
+  menorObitosNovos = lista[54][69][12]
+
+if maiorObitosNovos < lista[54][70][12]:
+  maiorObitosNovos = lista[54][70][12]
+if menorObitosNovos > lista[54][70][12]:
+  menorObitosNovos = lista[54][70][12]
+
+if maiorObitosNovos < lista[54][71][12]:
+  maiorObitosNovos = lista[54][71][12]
+if menorObitosNovos > lista[54][71][12]:
+  menorObitosNovos = lista[54][71][12]
+
+if maiorObitosNovos < lista[54][72][12]:
+  maiorObitosNovos = lista[54][72][12]
+if menorObitosNovos > lista[54][72][12]:
+  menorObitosNovos = lista[54][72][12]
+
+if maiorObitosNovos < lista[54][73][12]:
+  maiorObitosNovos = lista[54][73][12]
+if menorObitosNovos > lista[54][73][12]:
+  menorObitosNovos = lista[54][73][12]
+
+if maiorObitosNovos < lista[54][74][12]:
+  maiorObitosNovos = lista[54][74][12]
+if menorObitosNovos > lista[54][74][12]:
+  menorObitosNovos = lista[54][74][12]
+
+if maiorObitosNovos < lista[54][75][12]:
+  maiorObitosNovos = lista[54][75][12]
+if menorObitosNovos > lista[54][75][12]:
+  menorObitosNovos = lista[54][75][12]
+
+if maiorObitosNovos < lista[54][76][12]:
+  maiorObitosNovos = lista[54][76][12]
+if menorObitosNovos > lista[54][76][12]:
+  menorObitosNovos = lista[54][76][12]
+
+if maiorObitosNovos < lista[54][77][12]:
+  maiorObitosNovos = lista[54][77][12]
+if menorObitosNovos > lista[54][77][12]:
+  menorObitosNovos = lista[54][77][12]
+
+if maiorObitosNovos < lista[54][78][12]:
+  maiorObitosNovos = lista[54][78][12]
+if menorObitosNovos > lista[54][78][12]:
+  menorObitosNovos = lista[54][78][12]
+
+if maiorObitosNovos < lista[54][79][12]:
+  maiorObitosNovos = lista[54][79][12]
+if menorObitosNovos > lista[54][79][12]:
+  menorObitosNovos = lista[54][79][12]
+
+if maiorObitosNovos < lista[54][80][12]:
+  maiorObitosNovos = lista[54][80][12]
+if menorObitosNovos > lista[54][80][12]:
+  menorObitosNovos = lista[54][80][12]
+
+if maiorObitosNovos < lista[54][81][12]:
+  maiorObitosNovos = lista[54][81][12]
+if menorObitosNovos > lista[54][81][12]:
+  menorObitosNovos = lista[54][81][12]
+
+if maiorObitosNovos < lista[54][82][12]:
+  maiorObitosNovos = lista[54][82][12]
+if menorObitosNovos > lista[54][82][12]:
+  menorObitosNovos = lista[54][82][12]
+
+if maiorObitosNovos < lista[54][83][12]:
+  maiorObitosNovos = lista[54][83][12]
+if menorObitosNovos > lista[54][83][12]:
+  menorObitosNovos = lista[54][83][12]
+
+if maiorObitosNovos < lista[54][84][12]:
+  maiorObitosNovos = lista[54][84][12]
+if menorObitosNovos > lista[54][84][12]:
+  menorObitosNovos = lista[54][84][12]
+
+if maiorObitosNovos < lista[54][85][12]:
+  maiorObitosNovos = lista[54][85][12]
+if menorObitosNovos > lista[54][85][12]:
+  menorObitosNovos = lista[54][85][12]
+
+if maiorObitosNovos < lista[54][86][12]:
+  maiorObitosNovos = lista[54][86][12]
+if menorObitosNovos > lista[54][86][12]:
+  menorObitosNovos = lista[54][86][12]
+
+if maiorObitosNovos < lista[54][87][12]:
+  maiorObitosNovos = lista[54][87][12]
+if menorObitosNovos > lista[54][87][12]:
+  menorObitosNovos = lista[54][87][12]
+
+if maiorObitosNovos < lista[54][88][12]:
+  maiorObitosNovos = lista[54][88][12]
+if menorObitosNovos > lista[54][88][12]:
+  menorObitosNovos = lista[54][88][12]
+
+if maiorObitosNovos < lista[54][89][12]:
+  maiorObitosNovos = lista[54][89][12]
+if menorObitosNovos > lista[54][89][12]:
+  menorObitosNovos = lista[54][89][12]
+
+if maiorObitosNovos < lista[54][90][12]:
+  maiorObitosNovos = lista[54][90][12]
+if menorObitosNovos > lista[54][90][12]:
+  menorObitosNovos = lista[54][90][12]
+
+if maiorObitosNovos < lista[54][91][12]:
+  maiorObitosNovos = lista[54][91][12]
+if menorObitosNovos > lista[54][91][12]:
+  menorObitosNovos = lista[54][91][12]
+
+if maiorObitosNovos < lista[54][92][12]:
+  maiorObitosNovos = lista[54][92][12]
+if menorObitosNovos > lista[54][92][12]:
+  menorObitosNovos = lista[54][92][12]
+
+if maiorObitosNovos < lista[54][93][12]:
+  maiorObitosNovos = lista[54][93][12]
+if menorObitosNovos > lista[54][93][12]:
+  menorObitosNovos = lista[54][93][12]
+
+if maiorObitosNovos < lista[54][94][12]:
+  maiorObitosNovos = lista[54][94][12]
+if menorObitosNovos > lista[54][94][12]:
+  menorObitosNovos = lista[54][94][12]
+
+if maiorObitosNovos < lista[54][95][12]:
+  maiorObitosNovos = lista[54][95][12]
+if menorObitosNovos > lista[54][95][12]:
+  menorObitosNovos = lista[54][95][12]
+
+if maiorObitosNovos < lista[54][96][12]:
+  maiorObitosNovos = lista[54][96][12]
+if menorObitosNovos > lista[54][96][12]:
+  menorObitosNovos = lista[54][96][12]
+
+if maiorObitosNovos < lista[54][97][12]:
+  maiorObitosNovos = lista[54][97][12]
+if menorObitosNovos > lista[54][97][12]:
+  menorObitosNovos = lista[54][97][12]
+
+if maiorObitosNovos < lista[54][98][12]:
+  maiorObitosNovos = lista[54][98][12]
+if menorObitosNovos > lista[54][98][12]:
+  menorObitosNovos = lista[54][98][12]
+
+if maiorObitosNovos < lista[54][99][12]:
+  maiorObitosNovos = lista[54][99][12]
+if menorObitosNovos > lista[54][99][12]:
+  menorObitosNovos = lista[54][99][12]
+
+if maiorObitosNovos < lista[54][100][12]:
+  maiorObitosNovos = lista[54][100][12]
+if menorObitosNovos > lista[54][100][12]:
+  menorObitosNovos = lista[54][100][12]
+
+if maiorObitosNovos < lista[54][101][12]:
+  maiorObitosNovos = lista[54][101][12]
+if menorObitosNovos > lista[54][101][12]:
+  menorObitosNovos = lista[54][101][12]
+
+if maiorObitosNovos < lista[54][102][12]:
+  maiorObitosNovos = lista[54][102][12]
+if menorObitosNovos > lista[54][102][12]:
+  menorObitosNovos = lista[54][102][12]
+
+if maiorObitosNovos < lista[54][103][12]:
+  maiorObitosNovos = lista[54][103][12]
+if menorObitosNovos > lista[54][103][12]:
+  menorObitosNovos = lista[54][103][12]
+
+if maiorObitosNovos < lista[54][104][12]:
+  maiorObitosNovos = lista[54][104][12]
+if menorObitosNovos > lista[54][104][12]:
+  menorObitosNovos = lista[54][104][12]
+
+if maiorObitosNovos < lista[54][105][12]:
+  maiorObitosNovos = lista[54][105][12]
+if menorObitosNovos > lista[54][105][12]:
+  menorObitosNovos = lista[54][105][12]
+
+if maiorObitosNovos < lista[54][106][12]:
+  maiorObitosNovos = lista[54][106][12]
+if menorObitosNovos > lista[54][106][12]:
+  menorObitosNovos = lista[54][106][12]
+
+if maiorObitosNovos < lista[54][107][12]:
+  maiorObitosNovos = lista[54][107][12]
+if menorObitosNovos > lista[54][107][12]:
+  menorObitosNovos = lista[54][107][12]
+
+if maiorObitosNovos < lista[54][108][12]:
+  maiorObitosNovos = lista[54][108][12]
+if menorObitosNovos > lista[54][108][12]:
+  menorObitosNovos = lista[54][108][12]
+
+if maiorObitosNovos < lista[54][109][12]:
+  maiorObitosNovos = lista[54][109][12]
+if menorObitosNovos > lista[54][109][12]:
+  menorObitosNovos = lista[54][109][12]
+
+if maiorObitosNovos < lista[54][110][12]:
+  maiorObitosNovos = lista[54][110][12]
+if menorObitosNovos > lista[54][110][12]:
+  menorObitosNovos = lista[54][110][12]
+
+if maiorObitosNovos < lista[54][111][12]:
+  maiorObitosNovos = lista[54][111][12]
+if menorObitosNovos > lista[54][111][12]:
+  menorObitosNovos = lista[54][111][12]
+
+if maiorObitosNovos < lista[54][112][12]:
+  maiorObitosNovos = lista[54][112][12]
+if menorObitosNovos > lista[54][112][12]:
+  menorObitosNovos = lista[54][112][12]
+
+if maiorObitosNovos < lista[54][113][12]:
+  maiorObitosNovos = lista[54][113][12]
+if menorObitosNovos > lista[54][113][12]:
+  menorObitosNovos = lista[54][113][12]
+
+if maiorObitosNovos < lista[54][114][12]:
+  maiorObitosNovos = lista[54][114][12]
+if menorObitosNovos > lista[54][114][12]:
+  menorObitosNovos = lista[54][114][12]
+
+if maiorObitosNovos < lista[54][115][12]:
+  maiorObitosNovos = lista[54][115][12]
+if menorObitosNovos > lista[54][115][12]:
+  menorObitosNovos = lista[54][115][12]
+
+if maiorObitosNovos < lista[54][116][12]:
+  maiorObitosNovos = lista[54][116][12]
+if menorObitosNovos > lista[54][116][12]:
+  menorObitosNovos = lista[54][116][12]
+
+if maiorObitosNovos < lista[54][117][12]:
+  maiorObitosNovos = lista[54][117][12]
+if menorObitosNovos > lista[54][117][12]:
+  menorObitosNovos = lista[54][117][12]
+
+if maiorObitosNovos < lista[54][118][12]:
+  maiorObitosNovos = lista[54][118][12]
+if menorObitosNovos > lista[54][118][12]:
+  menorObitosNovos = lista[54][118][12]
+
+if maiorObitosNovos < lista[54][119][12]:
+  maiorObitosNovos = lista[54][119][12]
+if menorObitosNovos > lista[54][119][12]:
+  menorObitosNovos = lista[54][119][12]
+
+if maiorObitosNovos < lista[54][120][12]:
+  maiorObitosNovos = lista[54][120][12]
+if menorObitosNovos > lista[54][120][12]:
+  menorObitosNovos = lista[54][120][12]
+
+if maiorObitosNovos < lista[54][121][12]:
+  maiorObitosNovos = lista[54][121][12]
+if menorObitosNovos > lista[54][121][12]:
+  menorObitosNovos = lista[54][121][12]
+
+if maiorObitosNovos < lista[54][122][12]:
+  maiorObitosNovos = lista[54][122][12]
+if menorObitosNovos > lista[54][122][12]:
+  menorObitosNovos = lista[54][122][12]
+
+if maiorObitosNovos < lista[54][123][12]:
+  maiorObitosNovos = lista[54][123][12]
+if menorObitosNovos > lista[54][123][12]:
+  menorObitosNovos = lista[54][123][12]
+
+if maiorObitosNovos < lista[54][124][12]:
+  maiorObitosNovos = lista[54][124][12]
+if menorObitosNovos > lista[54][124][12]:
+  menorObitosNovos = lista[54][124][12]
+
+if maiorObitosNovos < lista[54][125][12]:
+  maiorObitosNovos = lista[54][125][12]
+if menorObitosNovos > lista[54][125][12]:
+  menorObitosNovos = lista[54][125][12]
+
+if maiorObitosNovos < lista[54][126][12]:
+  maiorObitosNovos = lista[54][126][12]
+if menorObitosNovos > lista[54][126][12]:
+  menorObitosNovos = lista[54][126][12]
+
+if maiorObitosNovos < lista[54][127][12]:
+  maiorObitosNovos = lista[54][127][12]
+if menorObitosNovos > lista[54][127][12]:
+  menorObitosNovos = lista[54][127][12]
+
+if maiorObitosNovos < lista[54][128][12]:
+  maiorObitosNovos = lista[54][128][12]
+if menorObitosNovos > lista[54][128][12]:
+  menorObitosNovos = lista[54][128][12]
+
+if maiorObitosNovos < lista[54][129][12]:
+  maiorObitosNovos = lista[54][129][12]
+if menorObitosNovos > lista[54][129][12]:
+  menorObitosNovos = lista[54][129][12]
+
+if maiorObitosNovos < lista[54][130][12]:
+  maiorObitosNovos = lista[54][130][12]
+if menorObitosNovos > lista[54][130][12]:
+  menorObitosNovos = lista[54][130][12]
+
+if maiorObitosNovos < lista[54][131][12]:
+  maiorObitosNovos = lista[54][131][12]
+if menorObitosNovos > lista[54][131][12]:
+  menorObitosNovos = lista[54][131][12]
+
+if maiorObitosNovos < lista[54][132][12]:
+  maiorObitosNovos = lista[54][132][12]
+if menorObitosNovos > lista[54][132][12]:
+  menorObitosNovos = lista[54][132][12]
+
+if maiorObitosNovos < lista[54][133][12]:
+  maiorObitosNovos = lista[54][133][12]
+if menorObitosNovos > lista[54][133][12]:
+  menorObitosNovos = lista[54][133][12]
+
+if maiorObitosNovos < lista[54][134][12]:
+  maiorObitosNovos = lista[54][134][12]
+if menorObitosNovos > lista[54][134][12]:
+  menorObitosNovos = lista[54][134][12]
+
+if maiorObitosNovos < lista[54][135][12]:
+  maiorObitosNovos = lista[54][135][12]
+if menorObitosNovos > lista[54][135][12]:
+  menorObitosNovos = lista[54][135][12]
+
+if maiorObitosNovos < lista[54][136][12]:
+  maiorObitosNovos = lista[54][136][12]
+if menorObitosNovos > lista[54][136][12]:
+  menorObitosNovos = lista[54][136][12]
+
+if maiorObitosNovos < lista[54][137][12]:
+  maiorObitosNovos = lista[54][137][12]
+if menorObitosNovos > lista[54][137][12]:
+  menorObitosNovos = lista[54][137][12]
+
+if maiorObitosNovos < lista[54][138][12]:
+  maiorObitosNovos = lista[54][138][12]
+if menorObitosNovos > lista[54][138][12]:
+  menorObitosNovos = lista[54][138][12]
+
+if maiorObitosNovos < lista[54][139][12]:
+  maiorObitosNovos = lista[54][139][12]
+if menorObitosNovos > lista[54][139][12]:
+  menorObitosNovos = lista[54][139][12]
+
+if maiorObitosNovos < lista[54][140][12]:
+  maiorObitosNovos = lista[54][140][12]
+if menorObitosNovos > lista[54][140][12]:
+  menorObitosNovos = lista[54][140][12]
+
+if maiorObitosNovos < lista[54][141][12]:
+  maiorObitosNovos = lista[54][141][12]
+if menorObitosNovos > lista[54][141][12]:
+  menorObitosNovos = lista[54][141][12]
+
+if maiorObitosNovos < lista[54][142][12]:
+  maiorObitosNovos = lista[54][142][12]
+if menorObitosNovos > lista[54][142][12]:
+  menorObitosNovos = lista[54][142][12]
+
+if maiorObitosNovos < lista[54][143][12]:
+  maiorObitosNovos = lista[54][143][12]
+if menorObitosNovos > lista[54][143][12]:
+  menorObitosNovos = lista[54][143][12]
+
+if maiorObitosNovos < lista[54][144][12]:
+  maiorObitosNovos = lista[54][144][12]
+if menorObitosNovos > lista[54][144][12]:
+  menorObitosNovos = lista[54][144][12]
+
+if maiorObitosNovos < lista[54][145][12]:
+  maiorObitosNovos = lista[54][145][12]
+if menorObitosNovos > lista[54][145][12]:
+  menorObitosNovos = lista[54][145][12]
+
+if maiorObitosNovos < lista[54][146][12]:
+  maiorObitosNovos = lista[54][146][12]
+if menorObitosNovos > lista[54][146][12]:
+  menorObitosNovos = lista[54][146][12]
+
+if maiorObitosNovos < lista[54][147][12]:
+  maiorObitosNovos = lista[54][147][12]
+if menorObitosNovos > lista[54][147][12]:
+  menorObitosNovos = lista[54][147][12]
+
+if maiorObitosNovos < lista[54][148][12]:
+  maiorObitosNovos = lista[54][148][12]
+if menorObitosNovos > lista[54][148][12]:
+  menorObitosNovos = lista[54][148][12]
+
+if maiorObitosNovos < lista[54][149][12]:
+  maiorObitosNovos = lista[54][149][12]
+if menorObitosNovos > lista[54][149][12]:
+  menorObitosNovos = lista[54][149][12]
+
+if maiorObitosNovos < lista[54][150][12]:
+  maiorObitosNovos = lista[54][150][12]
+if menorObitosNovos > lista[54][150][12]:
+  menorObitosNovos = lista[54][150][12]
+
+if maiorObitosNovos < lista[54][151][12]:
+  maiorObitosNovos = lista[54][151][12]
+if menorObitosNovos > lista[54][151][12]:
+  menorObitosNovos = lista[54][151][12]
+
+if maiorObitosNovos < lista[54][152][12]:
+  maiorObitosNovos = lista[54][152][12]
+if menorObitosNovos > lista[54][152][12]:
+  menorObitosNovos = lista[54][152][12]
+
+if maiorObitosNovos < lista[54][153][12]:
+  maiorObitosNovos = lista[54][153][12]
+if menorObitosNovos > lista[54][153][12]:
+  menorObitosNovos = lista[54][153][12]
+
+if maiorObitosNovos < lista[54][154][12]:
+  maiorObitosNovos = lista[54][154][12]
+if menorObitosNovos > lista[54][154][12]:
+  menorObitosNovos = lista[54][154][12]
+
+if maiorObitosNovos < lista[54][155][12]:
+  maiorObitosNovos = lista[54][155][12]
+if menorObitosNovos > lista[54][155][12]:
+  menorObitosNovos = lista[54][155][12]
+
+if maiorObitosNovos < lista[54][156][12]:
+  maiorObitosNovos = lista[54][156][12]
+if menorObitosNovos > lista[54][156][12]:
+  menorObitosNovos = lista[54][156][12]
+
+if maiorObitosNovos < lista[54][157][12]:
+  maiorObitosNovos = lista[54][157][12]
+if menorObitosNovos > lista[54][157][12]:
+  menorObitosNovos = lista[54][157][12]
+
+if maiorObitosNovos < lista[54][158][12]:
+  maiorObitosNovos = lista[54][158][12]
+if menorObitosNovos > lista[54][158][12]:
+  menorObitosNovos = lista[54][158][12]
+
+if maiorObitosNovos < lista[54][159][12]:
+  maiorObitosNovos = lista[54][159][12]
+if menorObitosNovos > lista[54][159][12]:
+  menorObitosNovos = lista[54][159][12]
+
+if maiorObitosNovos < lista[54][160][12]:
+  maiorObitosNovos = lista[54][160][12]
+if menorObitosNovos > lista[54][160][12]:
+  menorObitosNovos = lista[54][160][12]
+
+if maiorObitosNovos < lista[54][161][12]:
+  maiorObitosNovos = lista[54][161][12]
+if menorObitosNovos > lista[54][161][12]:
+  menorObitosNovos = lista[54][161][12]
+
+if maiorObitosNovos < lista[54][162][12]:
+  maiorObitosNovos = lista[54][162][12]
+if menorObitosNovos > lista[54][162][12]:
+  menorObitosNovos = lista[54][162][12]
+
+if maiorObitosNovos < lista[54][163][12]:
+  maiorObitosNovos = lista[54][163][12]
+if menorObitosNovos > lista[54][163][12]:
+  menorObitosNovos = lista[54][163][12]
+
+if maiorObitosNovos < lista[54][164][12]:
+  maiorObitosNovos = lista[54][164][12]
+if menorObitosNovos > lista[54][164][12]:
+  menorObitosNovos = lista[54][164][12]
+
+if maiorObitosNovos < lista[54][165][12]:
+  maiorObitosNovos = lista[54][165][12]
+if menorObitosNovos > lista[54][165][12]:
+  menorObitosNovos = lista[54][165][12]
+
+if maiorObitosNovos < lista[54][166][12]:
+  maiorObitosNovos = lista[54][166][12]
+if menorObitosNovos > lista[54][166][12]:
+  menorObitosNovos = lista[54][166][12]
+
+if maiorObitosNovos < lista[54][167][12]:
+  maiorObitosNovos = lista[54][167][12]
+if menorObitosNovos > lista[54][167][12]:
+  menorObitosNovos = lista[54][167][12]
+
+if maiorObitosNovos < lista[54][168][12]:
+  maiorObitosNovos = lista[54][168][12]
+if menorObitosNovos > lista[54][168][12]:
+  menorObitosNovos = lista[54][168][12]
+
+if maiorObitosNovos < lista[54][169][12]:
+  maiorObitosNovos = lista[54][169][12]
+if menorObitosNovos > lista[54][169][12]:
+  menorObitosNovos = lista[54][169][12]
+
+if maiorObitosNovos < lista[54][170][12]:
+  maiorObitosNovos = lista[54][170][12]
+if menorObitosNovos > lista[54][170][12]:
+  menorObitosNovos = lista[54][170][12]
+
+if maiorObitosNovos < lista[54][171][12]:
+  maiorObitosNovos = lista[54][171][12]
+if menorObitosNovos > lista[54][171][12]:
+  menorObitosNovos = lista[54][171][12]
+
+if maiorObitosNovos < lista[54][172][12]:
+  maiorObitosNovos = lista[54][172][12]
+if menorObitosNovos > lista[54][172][12]:
+  menorObitosNovos = lista[54][172][12]
+
+if maiorObitosNovos < lista[54][173][12]:
+  maiorObitosNovos = lista[54][173][12]
+if menorObitosNovos > lista[54][173][12]:
+  menorObitosNovos = lista[54][173][12]
+
+if maiorObitosNovos < lista[54][174][12]:
+  maiorObitosNovos = lista[54][174][12]
+if menorObitosNovos > lista[54][174][12]:
+  menorObitosNovos = lista[54][174][12]
+
+if maiorObitosNovos < lista[54][175][12]:
+  maiorObitosNovos = lista[54][175][12]
+if menorObitosNovos > lista[54][175][12]:
+  menorObitosNovos = lista[54][175][12]
+
+if maiorObitosNovos < lista[54][176][12]:
+  maiorObitosNovos = lista[54][176][12]
+if menorObitosNovos > lista[54][176][12]:
+  menorObitosNovos = lista[54][176][12]
+
+if maiorObitosNovos < lista[54][177][12]:
+  maiorObitosNovos = lista[54][177][12]
+if menorObitosNovos > lista[54][177][12]:
+  menorObitosNovos = lista[54][177][12]
+
+if maiorObitosNovos < lista[54][178][12]:
+  maiorObitosNovos = lista[54][178][12]
+if menorObitosNovos > lista[54][178][12]:
+  menorObitosNovos = lista[54][178][12]
+
+if maiorObitosNovos < lista[54][179][12]:
+  maiorObitosNovos = lista[54][179][12]
+if menorObitosNovos > lista[54][179][12]:
+  menorObitosNovos = lista[54][179][12]
+
+if maiorObitosNovos < lista[54][180][12]:
+  maiorObitosNovos = lista[54][180][12]
+if menorObitosNovos > lista[54][180][12]:
+  menorObitosNovos = lista[54][180][12]
+
+if maiorObitosNovos < lista[54][181][12]:
+  maiorObitosNovos = lista[54][181][12]
+if menorObitosNovos > lista[54][181][12]:
+  menorObitosNovos = lista[54][181][12]
+
+if maiorObitosNovos < lista[54][182][12]:
+  maiorObitosNovos = lista[54][182][12]
+if menorObitosNovos > lista[54][182][12]:
+  menorObitosNovos = lista[54][182][12]
+
+if maiorObitosNovos < lista[54][183][12]:
+  maiorObitosNovos = lista[54][183][12]
+if menorObitosNovos > lista[54][183][12]:
+  menorObitosNovos = lista[54][183][12]
+
+if maiorObitosNovos < lista[54][184][12]:
+  maiorObitosNovos = lista[54][184][12]
+if menorObitosNovos > lista[54][184][12]:
+  menorObitosNovos = lista[54][184][12]
+
+if maiorObitosNovos < lista[54][185][12]:
+  maiorObitosNovos = lista[54][185][12]
+if menorObitosNovos > lista[54][185][12]:
+  menorObitosNovos = lista[54][185][12]
+
+if maiorObitosNovos < lista[54][186][12]:
+  maiorObitosNovos = lista[54][186][12]
+if menorObitosNovos > lista[54][186][12]:
+  menorObitosNovos = lista[54][186][12]
+
+if maiorObitosNovos < lista[54][187][12]:
+  maiorObitosNovos = lista[54][187][12]
+if menorObitosNovos > lista[54][187][12]:
+  menorObitosNovos = lista[54][187][12]
+
+if maiorObitosNovos < lista[54][188][12]:
+  maiorObitosNovos = lista[54][188][12]
+if menorObitosNovos > lista[54][188][12]:
+  menorObitosNovos = lista[54][188][12]
+
+if maiorObitosNovos < lista[54][189][12]:
+  maiorObitosNovos = lista[54][189][12]
+if menorObitosNovos > lista[54][189][12]:
+  menorObitosNovos = lista[54][189][12]
+
+if maiorObitosNovos < lista[54][190][12]:
+  maiorObitosNovos = lista[54][190][12]
+if menorObitosNovos > lista[54][190][12]:
+  menorObitosNovos = lista[54][190][12]
+
+if maiorObitosNovos < lista[54][191][12]:
+  maiorObitosNovos = lista[54][191][12]
+if menorObitosNovos > lista[54][191][12]:
+  menorObitosNovos = lista[54][191][12]
+
+if maiorObitosNovos < lista[54][192][12]:
+  maiorObitosNovos = lista[54][192][12]
+if menorObitosNovos > lista[54][192][12]:
+  menorObitosNovos = lista[54][192][12]
+
+if maiorObitosNovos < lista[54][193][12]:
+  maiorObitosNovos = lista[54][193][12]
+if menorObitosNovos > lista[54][193][12]:
+  menorObitosNovos = lista[54][193][12]
+
+if maiorObitosNovos < lista[54][194][12]:
+  maiorObitosNovos = lista[54][194][12]
+if menorObitosNovos > lista[54][194][12]:
+  menorObitosNovos = lista[54][194][12]
+
+if maiorObitosNovos < lista[54][195][12]:
+  maiorObitosNovos = lista[54][195][12]
+if menorObitosNovos > lista[54][195][12]:
+  menorObitosNovos = lista[54][195][12]
+
+if maiorObitosNovos < lista[54][196][12]:
+  maiorObitosNovos = lista[54][196][12]
+if menorObitosNovos > lista[54][196][12]:
+  menorObitosNovos = lista[54][196][12]
+
+if maiorObitosNovos < lista[54][197][12]:
+  maiorObitosNovos = lista[54][197][12]
+if menorObitosNovos > lista[54][197][12]:
+  menorObitosNovos = lista[54][197][12]
+
+if maiorObitosNovos < lista[54][198][12]:
+  maiorObitosNovos = lista[54][198][12]
+if menorObitosNovos > lista[54][198][12]:
+  menorObitosNovos = lista[54][198][12]
+
+if maiorObitosNovos < lista[54][199][12]:
+  maiorObitosNovos = lista[54][199][12]
+if menorObitosNovos > lista[54][199][12]:
+  menorObitosNovos = lista[54][199][12]
+
+if maiorObitosNovos < lista[54][200][12]:
+  maiorObitosNovos = lista[54][200][12]
+if menorObitosNovos > lista[54][200][12]:
+  menorObitosNovos = lista[54][200][12]
+
+if maiorObitosNovos < lista[54][201][12]:
+  maiorObitosNovos = lista[54][201][12]
+if menorObitosNovos > lista[54][201][12]:
+  menorObitosNovos = lista[54][201][12]
+
+if maiorObitosNovos < lista[54][202][12]:
+  maiorObitosNovos = lista[54][202][12]
+if menorObitosNovos > lista[54][202][12]:
+  menorObitosNovos = lista[54][202][12]
+
+if maiorObitosNovos < lista[54][203][12]:
+  maiorObitosNovos = lista[54][203][12]
+if menorObitosNovos > lista[54][203][12]:
+  menorObitosNovos = lista[54][203][12]
+
+if maiorObitosNovos < lista[54][204][12]:
+  maiorObitosNovos = lista[54][204][12]
+if menorObitosNovos > lista[54][204][12]:
+  menorObitosNovos = lista[54][204][12]
+
+if maiorObitosNovos < lista[54][205][12]:
+  maiorObitosNovos = lista[54][205][12]
+if menorObitosNovos > lista[54][205][12]:
+  menorObitosNovos = lista[54][205][12]
+
+if maiorObitosNovos < lista[54][206][12]:
+  maiorObitosNovos = lista[54][206][12]
+if menorObitosNovos > lista[54][206][12]:
+  menorObitosNovos = lista[54][206][12]
+
+if maiorObitosNovos < lista[54][207][12]:
+  maiorObitosNovos = lista[54][207][12]
+if menorObitosNovos > lista[54][207][12]:
+  menorObitosNovos = lista[54][207][12]
+
+if maiorObitosNovos < lista[54][208][12]:
+  maiorObitosNovos = lista[54][208][12]
+if menorObitosNovos > lista[54][208][12]:
+  menorObitosNovos = lista[54][208][12]
+
+if maiorObitosNovos < lista[54][209][12]:
+  maiorObitosNovos = lista[54][209][12]
+if menorObitosNovos > lista[54][209][12]:
+  menorObitosNovos = lista[54][209][12]
+
+if maiorObitosNovos < lista[54][210][12]:
+  maiorObitosNovos = lista[54][210][12]
+if menorObitosNovos > lista[54][210][12]:
+  menorObitosNovos = lista[54][210][12]
+
+if maiorObitosNovos < lista[54][211][12]:
+  maiorObitosNovos = lista[54][211][12]
+if menorObitosNovos > lista[54][211][12]:
+  menorObitosNovos = lista[54][211][12]
+
+if maiorObitosNovos < lista[54][212][12]:
+  maiorObitosNovos = lista[54][212][12]
+if menorObitosNovos > lista[54][212][12]:
+  menorObitosNovos = lista[54][212][12]
+
+if maiorObitosNovos < lista[54][213][12]:
+  maiorObitosNovos = lista[54][213][12]
+if menorObitosNovos > lista[54][213][12]:
+  menorObitosNovos = lista[54][213][12]
+
+if maiorObitosNovos < lista[54][214][12]:
+  maiorObitosNovos = lista[54][214][12]
+if menorObitosNovos > lista[54][214][12]:
+  menorObitosNovos = lista[54][214][12]
+
+if maiorObitosNovos < lista[54][215][12]:
+  maiorObitosNovos = lista[54][215][12]
+if menorObitosNovos > lista[54][215][12]:
+  menorObitosNovos = lista[54][215][12]
+
+if maiorObitosNovos < lista[54][216][12]:
+  maiorObitosNovos = lista[54][216][12]
+if menorObitosNovos > lista[54][216][12]:
+  menorObitosNovos = lista[54][216][12]
+
+if maiorObitosNovos < lista[54][217][12]:
+  maiorObitosNovos = lista[54][217][12]
+if menorObitosNovos > lista[54][217][12]:
+  menorObitosNovos = lista[54][217][12]
+
+if maiorObitosNovos < lista[54][218][12]:
+  maiorObitosNovos = lista[54][218][12]
+if menorObitosNovos > lista[54][218][12]:
+  menorObitosNovos = lista[54][218][12]
+
+if maiorObitosNovos < lista[54][219][12]:
+  maiorObitosNovos = lista[54][219][12]
+if menorObitosNovos > lista[54][219][12]:
+  menorObitosNovos = lista[54][219][12]
+
+if maiorObitosNovos < lista[54][220][12]:
+  maiorObitosNovos = lista[54][220][12]
+if menorObitosNovos > lista[54][220][12]:
+  menorObitosNovos = lista[54][220][12]
+
+if maiorObitosNovos < lista[54][221][12]:
+  maiorObitosNovos = lista[54][221][12]
+if menorObitosNovos > lista[54][221][12]:
+  menorObitosNovos = lista[54][221][12]
+
+if maiorObitosNovos < lista[54][222][12]:
+  maiorObitosNovos = lista[54][222][12]
+if menorObitosNovos > lista[54][222][12]:
+  menorObitosNovos = lista[54][222][12]
+print('\nMenor número de obitos novos na lista:', menorObitosNovos)
+print('Maior número de obitos novos na lista:', maiorObitosNovos)
 # FIM QUESTÃO 01 - LETRA J
 
-'''
+# QUESTÃO 01 - LETRA K
+obitosNovos = {
+  'Nordeste':{
+    'PB':{
+      'João Pessoa': 7,
+      'Santa Rita': 0,
+      'Bayeux': 2,
+      'Campina Grande': 5
+    },
+    'RN':{
+      'Macaiba': 1,
+      'Natal': 8,
+      'Açu': 0
+    }
+  },
+  'Sudeste':{
+    'SP':{
+      'São Paulo': 30,
+      'Guarulhos': 10,
+    },
+    'RJ':{
+      'Rio de Janeiro': 20,
+      'Niteroi': 7
+    }
+  }
+}
+print('Obitos novos em Santa Rita/PB: ',obitosNovos['Nordeste']['PB']['Santa Rita'])
+# FIM QUESTÃO 1 - LETRA K
+
+# QUESTÃO 01 - LETRA L
+dados = {
+  'Nordeste': {
+    'PI':{
+      'Teresina':{
+        'casosAcumulado': 24380,
+        'casosNovos': 363,
+        'obitosAcumulados': 884,
+        'obitosNovos': 4,
+        'populacaoTCU2019': 864845
+      }
+    }
+  }
+}
+print('Obitos novos em Teresina/PI: ',dados['Nordeste']['PI']['Teresina']['obitosNovos'])
+#FIM QUESTÃO 01 - LETRA L
 
 
