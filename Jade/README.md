@@ -1,11 +1,2 @@
-# ProgISD20202
-Pasta da disciplina de Programação
-
-Nesta pasta os alunos da disciplina colocarão as suas atividades associadas à disciplina.
-
-Fluxo de Trabalho:
-Fork
-clone/pull/download
-alterar o conteúdo
-subir pra pasta repositório local
-pull request
+Essa pasta possui as atividades da disciplina de Fundamentos de Programação e Desenvolvimento de Projetos aplicados a Neuroengenharia da Aluna Jade Marina Dias Gomes.
+A divisão das pastas se dá por aula. Cada aula contém 3 atividades: Questões objetivas da aula (arquivo pdf), exercícios de aula (arquivo python) e atividade contextualizada (arquivo python). 

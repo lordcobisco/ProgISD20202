@@ -1,5 +1,5 @@
 '''
-lista = ['O carro','peixe',123,111]
+lista = ['carro','peixe',123,111]
 print(lista)
 #lista dentro de uma lista
 nova_lista = ['pedra', lista]
@@ -95,12 +95,12 @@ print(tupla)
 tupla = ()
 print(tupla)
 
-tupla = ("Maria", "Joao", "Carlos") 
+tupla = ("Maria", "Joao", "Jade") 
 print(tupla[0])
 print(tupla[0:2])
 
 
-#tupla[0] = "Ana"
+#tupla[0] = "Andre"
 
 p = "python"
 print(p[0:0])
@@ -112,46 +112,15 @@ print(p[4:5])
 print(p[5:6])
 print(p[6:6])
 
-p = "python"
-print(p[:1])
-print(p[:2])
-print(p[:3])
-print(p[:4])
-print(p[:5])
-print(p[:6])
 
-p = "python"
-print(p[0:0])
-print(p[0:1])
-print(p[0:2])
-print(p[0:3])
-print(p[0:4])
-print(p[0:5])
-print(p[0:6])
+dadosCovid = {}
+print(dadosCovid)
+dadosCovid = dict()
+print(dadosCovid)
 
-
-p = "python"
-print(p[:])
-print(p[1:])
-print(p[2:])
-print(p[3:])
-print(p[4:])
-print(p[5:])
-print(p[6:])
-
-agenda = {}
-print(agenda)
-
-agenda = {"Maria": [99887766, 99887755]}
-print(agenda)
-
-agenda = {"Maria": [99887766, 99887755], "Pedro": [92345678], "Joaquim": [99887711, 99665533]}
-print(agenda)
-
-print(agenda["Maria"])
-
-agenda["Pedro"] = [87654433]
-print(agenda)
+dadosCovidCasosNovos = {'Brasil':[0,1,0,0,1,0,0,0,1,4,6], 'Nordeste':[0,0,4,4,6,17]}
+print(dadosCovidCasosNovos)
+print(dadosCovidCasosNovos['Brasil'])
 '''
 #Implementar switch usando dicionario
 
