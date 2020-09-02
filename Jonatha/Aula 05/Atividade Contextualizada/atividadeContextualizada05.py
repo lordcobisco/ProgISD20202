@@ -1661,50 +1661,40 @@ print('\nMenor número de obitos novos na lista:', menorObitosNovos)
 print('Maior número de obitos novos na lista:', maiorObitosNovos)
 # FIM QUESTÃO 01 - LETRA J
 
-# QUESTÃO 01 - LETRA K
-obitosNovos = {
-  'Nordeste':{
-    'PB':{
-      'João Pessoa': 7,
-      'Santa Rita': 0,
-      'Bayeux': 2,
-      'Campina Grande': 5
-    },
-    'RN':{
-      'Macaiba': 1,
-      'Natal': 8,
-      'Açu': 0
-    }
-  },
-  'Sudeste':{
-    'SP':{
-      'São Paulo': 30,
-      'Guarulhos': 10,
-    },
-    'RJ':{
-      'Rio de Janeiro': 20,
-      'Niteroi': 7
-    }
-  }
-}
-print('Obitos novos em Santa Rita/PB: ',obitosNovos['Nordeste']['PB']['Santa Rita'])
-# FIM QUESTÃO 1 - LETRA K
-
-# QUESTÃO 01 - LETRA L
+# QUESTÃO 01 - LETRA K e L
 dados = {
   'Nordeste': {
     'PI':{
       'Teresina':{
-        'casosAcumulado': 24380,
-        'casosNovos': 363,
-        'obitosAcumulados': 884,
-        'obitosNovos': 4,
-        'populacaoTCU2019': 864845
+        '27/08/2020':{
+          'casosAcumulado': 24380,
+          'casosNovos': 363,
+          'obitosAcumulados': 884,
+          'obitosNovos': 4,
+          'populacaoTCU2019': 864845,
+          'semana': 35
+        },
+        '26/08/2020':{
+          'casosAcumulado': 24017,
+          'casosNovos': 367,
+          'obitosAcumulados': 880,
+          'obitosNovos': 7,
+          'populacaoTCU2019': 864845,
+          'semana': 35
+        },
+        '25/08/2020':{
+          'casosAcumulado': 23650,
+          'casosNovos': 226,
+          'obitosAcumulados': 873,
+          'obitosNovos': 5,
+          'populacaoTCU2019': 864845,
+          'semana': 35
+        }
       }
     }
   }
 }
-print('Obitos novos em Teresina/PI: ',dados['Nordeste']['PI']['Teresina']['obitosNovos'])
-#FIM QUESTÃO 01 - LETRA L
+print('Obitos novos em Teresina/PI: ',dados['Nordeste']['PI']['Teresina']['27/08/2020']['obitosNovos'])
+#FIM QUESTÃO 01 - LETRA K e L
 
 
