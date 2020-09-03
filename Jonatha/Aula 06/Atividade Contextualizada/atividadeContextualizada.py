@@ -16,7 +16,7 @@ posicionamentoAgulha = {'AP': 6.42, 'LL1': -3.23, 'LL2': 3.23, 'DV': 4.2} #Uso d
 hipocampo = [-0.42, -0.3, 0.3, -0.2] # Uso de lista
 farmaco = dict()
 animal = dict()
-resposta = '' # Variável auxiliar
+
 
 print('Bem vindo(a) à cirurgia esterotáxica.')
 print('Este programa vai automatizar o procedimento.')
