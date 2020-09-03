@@ -6,6 +6,8 @@ Created on Wed Aug 26 12:06:03 2020
 """
 from numpy.random import seed
 from numpy.random import randint
+
+# usei time para pausa
 import time
 
 # seed random number generator
