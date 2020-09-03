@@ -12,7 +12,6 @@ import time
 seed(101)
 
 count_tocou = 0
-fim_treino = False
 
 # Requisito 1: Habituação
 # i. se o animal está habituado, registrar em uma variável
@@ -23,6 +22,7 @@ animal_habituado = int(input('O animal já está habituado? (NÃO 0| SIM 1): '))
 
 if(animal_habituado): 
   limite_acerto = 20  # maior chance de acerto
+  print('Animal já está habituado mas seguirá com treino para registro dos dados')
 else:
   limite_acerto = 2   # menor chance de acerto
   
@@ -42,139 +42,44 @@ tempo_restante = 30
 # viii.   se o experimento foi realizado 50x em 30min apresentr que o experimento
 #seguirpa para a próxima fase
 
-# obs.: sei que não aprendemos definição de função ainda, mas achei que definindo
-#a função, o código teria uma leitura mais clara
-def situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto):
-
+while tempo_restante > 0:
   # Animal se aproximou após um período de tempo (aleatório)
   tempo_passado = randint(0, 101)/100    # gera um número aleatório entre 0 e 1 com resolução de 0.01
   time.sleep(tempo_passado)
   tempo_restante = tempo_restante - tempo_passado # desconta do tempo do experimento
   
   print('-'*100)
-  if(fim_treino == False):
-    print('Animal de aproximou. Liberada recompensa')
+  print('Animal de aproximou. Liberada recompensa')
+  
+  # emissão de som
+  som_emitido = randint(0,2)
+  if(som_emitido == 0):
+    print('\nFoi emitido o som phee (barra esquerda)')
+  elif(som_emitido == 1):
+    print('\nFoi emitido o som trill (barra direita)')
+  
+  # toque da barra
+  animal_tocou = randint(0,limite_acerto)    # limite depende de o animal estar habituado ou não
+  if(animal_tocou >= 1):
+    count_tocou = count_tocou + 1
+    lado_barra = randint(0,2)
     
-    # emissão de som
-    som_emitido = randint(0,2)
-    if(som_emitido == 0):
-      print('\nFoi emitido o som phee (barra esquerda)')
-    elif(som_emitido == 1):
-      print('\nFoi emitido o som trill (barra direita)')
-    
-    # toque da barra
-    animal_tocou = randint(0,limite_acerto)    # limite depende de o animal estar habituado ou não
-    if(animal_tocou >= 1):
-      count_tocou = count_tocou + 1
-      lado_barra = randint(0,2)
-      
-      # acerto de barra pelo som emitido
-      if(som_emitido == lado_barra):
-        print('\nAnimal tocou a barra correta. Liberada recompensa')
-      else:
-        print('\nAnimal tocou a barra errada')
+    # acerto de barra pelo som emitido
+    if(som_emitido == lado_barra):
+      print('\nAnimal tocou a barra correta. Liberada recompensa')
     else:
-      print('\nAnimal não tocou na barra')
-        
-    print('   Restam ', tempo_restante, ' minutos para o fim do treino')
-    print('   Animal tocou', count_tocou, 'vezes na barra')
-    
-    if(tempo_restante < 0): # passaram 30 minutos
-      print('O TEMPO LIMITE JÁ FOI ULTRAPASSADO')
-      fim_treino = True
-    if(count_tocou >= 20):  # animal acumulou 20 toques corretos
-      print('O TREINO PASSOU PARA A PRÓXIMA ETAPA')
-    if(count_tocou >= 50 and tempo_restante >= 0): # animal acumulou 50 toques corretos
-      print('O TREINO PASSOU PARA A PRÓXIMA FASE')
-      fim_treino = True
+      print('\nAnimal tocou a barra errada')
+  else:
+    print('\nAnimal não tocou na barra')
       
-  else: # tempo esgotou, não há mais treino, ms o animal continua na caixa
-    print('Animal de aproximou. Mas o tempo está esgotado')
+  print('   Restam ', tempo_restante, ' minutos para o fim do treino')
+  print('   Animal tocou', count_tocou, 'vezes na barra')
+  
+  if(count_tocou >= 20):  # animal acumulou 20 toques corretos
+    print('O TREINO PASSOU PARA A PRÓXIMA ETAPA')
+  if(count_tocou >= 50 and tempo_restante >= 0): # animal acumulou 50 toques corretos
+    print('O TREINO PASSOU PARA A PRÓXIMA FASE')
   print('')
-    
-  return tempo_restante, count_tocou, fim_treino
-
-# repetir o monitoramento o quanto tempo for suficiente para o término o treino
-# lógica: a média de passo temporal é de 0.5 minuto. Para alcançar 30 minutos,
-#repetir em torno de 60 monitoramentos. Escolhi 80
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
-tempo_restante, count_tocou, fim_treino = situacao_treino(tempo_restante, count_tocou, fim_treino, limite_acerto)
+  
+print('-'*100)
+print('O TEMPO LIMITE JÁ FOI ULTRAPASSADO')
