@@ -3,6 +3,7 @@
 # VÁRIAVEIS COM FINAL "T" SIGNIFICA TUPLA, "R" SIGNIFICA QUE SÃO    #
 # DADOS DAS REGIÕES DE SÁUDE DO NORDESTE, E QUANDO FOR "RR" SÃO     #
 # DADOS DO ESTADO DE RORAIMA. E RT É TUPLA DA REGIÃO .              #
+# DEV:MARIA FRANKLIN (DBRAZIL)                                      #
 #####################################################################
 
 import math 
@@ -19,7 +20,7 @@ casosnovos=[57,185,351,42,365,867,406,204,1085,555,583,190,225,237,178,316,372,3
 obitosAcumulados=[582,617,3505,568,1017,516,5945,1763,4475,3277,8163,2183,7210,1619,2081,1717,14566,26899,2908,4223,
 2744,1839,2733,2042,2336,2368,640]
 NovosObitos=[6,4,22,0,0,5,5,10,69,13,30,21,22,11,14,12,4,47,33,91,55,42,42,66,14,28,14]
-Estado=[estados,populacao,CasosAcumulado,casosnovos,obitosAcumulados,NovosObitos]##LISTA
+ListaEstado=[estados,populacao,CasosAcumulado,casosnovos,obitosAcumulados,NovosObitos]##LISTA
 
 ##TUPLA (A)-Estados
 estadosT=("Acre ","Amapá","Amazonas","Rondônia","Roraima","Tocantins","Pará","Alagoas ","Bahia","Ceará ","Maranhão","Paraíba","Pernambuco",
@@ -37,8 +38,10 @@ NovosObitosT=(6,4,22,0,0,5,5,10,69,13,30,21,22,11,14,12,4,47,33,91,55,42,42,66,1
 EstadoTupla=(estadosT,populacaoT,CasosAcumuladoT,casosnovosT,obitosAcumuladosT,NovosObitosT)##TUPLA
 
 ## inserindo o número certo de novos óbitos do estado da Paraíba (d)
-x=Estado[5][11]-10
-Estado[5].insert(11,x)
+#print("Valor óbitos novos para o estado da paraíba antes",ListaEstado[5][11])
+x=ListaEstado[5][11]+10
+ListaEstado[5].insert(11,x)
+#print("Valor óbitos novos para o estado da paraíba ajustado",ListaEstado[5][11])
 #y=EstadoTupla[5][11]-10 ## A tupla não deixa inserir (e)
 #EstadoTupla[5].insert(11,y)
 
@@ -84,11 +87,11 @@ CasosAcumuladoR.append(CasosAcumuladoRR)
 NovosObitosR.append(NovosObitosRR)
 RR=[municipioRR,regiaoRR,populacaoRR,CasosAcumuladoRR,casosnovosRR,obitosAcumuladosRR,NovosObitosRR]
 ##ADD em lista existente (f)
-Estado[1].insert(4,EstadoRR[0])
-Estado[3].insert(4,EstadoRR[2])
-Estado[2].insert(4,EstadoRR[1])
-Estado[4].insert(4,EstadoRR[3])
-Estado[5].insert(4,EstadoRR[4])
+ListaEstado[1].insert(4,EstadoRR[0])
+ListaEstado[3].insert(4,EstadoRR[2])
+ListaEstado[2].insert(4,EstadoRR[1])
+ListaEstado[4].insert(4,EstadoRR[3])
+ListaEstado[5].insert(4,EstadoRR[4])
 Regioes[0].append(RR[0])
 Regioes[1].append(RR[1])
 Regioes[2].append(RR[2])
@@ -96,33 +99,41 @@ Regioes[3].append(RR[3])
 Regioes[4].append(RR[4])
 Regioes[5].append(RR[5])
 Regioes[6].append(RR[6])
-
 ## Remove os dados das regiões de saúde
+#print("Antes da remorção das regiões:\n",RR)
 RR.remove(regiaoRR)
+#print("Depois da remorção:\n",RR)
 
 ##Soma dos dados do municipio de RR no dia 18/08/2020 (h)
 somaRR=[sum(RR[1]),sum(RR[2]),sum(RR[3]),sum(RR[4]),sum(RR[5])]
+### Tamanho da lista (j)
+print("A lista de estados contém:",len(ListaEstado),"de listas e contém:",len(ListaEstado[0])*len(ListaEstado),"atributos")
+print("A lista dos dados das regiões de saúde contém:",len(Regioes),"de listas e contém:",len(Regioes[0])*len(Regioes),"atributos")
+print("Tamanho da lista dos dados de Roraima em 18/08:",len(EstadoRR))
+print("A lista dos dados do municipio de Roraima em 18/08:",len(RR),"de listas e contém:",len(RR[0])*len(RR),"atributos")
 
 ##DICIONÁRIO (K)(L)
 Nordeste=["Alagoas ","Bahia","Ceará ","Maranhão","Paraíba","Pernambuco",
 "Piauí","Rio Grande do Norte","Sergipe"]
-print("***Wiki: principais regiões de saúde***\n")
+print("\n***Wiki: principais regiões de saúde do dia 17/08/2020***")
+print("#Busca a quatidade de casos novos")
 print("\n0-Maceió/AL\n1-Salvador/BA\n2-Fortaleza/CE\n3-São Luis/MA\n4-João Pessoa/PB\n5-Recife/PE\n6-Teresina/PI\n7-Natal/RN\n8-Aracaju/SE")
 dadosCovid={"0":[Nordeste[0],Regioes[0][0],Regioes[4][0]],"1":[Nordeste[1],Regioes[0][1],Regioes[4][1]],"2":[Nordeste[2],Regioes[0][2],Regioes[4][2]],
 "3":[Nordeste[3],Regioes[0][3],Regioes[4][3]],"4":[Nordeste[4],Regioes[0][4],Regioes[4][4]],"5":[Nordeste[5],Regioes[0][5],Regioes[4][5]],
 "6":[Nordeste[6],Regioes[0][6],Regioes[4][6]],"7":[Nordeste[7],Regioes[0][7],Regioes[4][7]],"8":[Nordeste[8],Regioes[0][8],Regioes[4][8]]}
-comando=input('Aperte no número equivalente ao municipio buscado')
+comando=input('Aperte no número equivalente ao municipio buscado: ')
 print("Município: ",dadosCovid[comando][1],"\nEstado:",dadosCovid[comando][0],"\nCasos Novos: ",dadosCovid[comando][2])
-
 #######################################################################
 print("\n############################################################")
 print("********Bem vindo ao Wiki COVIDE 19**************")
-choice=int(input("Caso você deseje saber sobre como está a Covid 19 por estados aperte 3,\npelas principais regiões de sáude do nordeste aperte 2,e 3 para os municipios do RR: "))
+print("#17/08/2020")
+choice=int(input("Caso você deseje saber sobre como está a Covid 19 por estados aperte 1,\npelas principais regiões de sáude do nordeste aperte 2,e 3 para os municipios do RR: "))
 ## Aqui pode printar o número de casos acumulados para o estado do rio de janeiro (b)
 if(choice==1):
-     e1=int(input("\nPara saber os dados por estado aperte 1 e para os obitos acumulado aperte em 2:"))
+     e1=int(input("\nPara saber todos os dados por estado aperte 1 e para os obitos acumulado aperte em 2:"))
      if(e1==1): 
            print("***Wiki:estados do Brasil**\n")
+           print("#17/08/2020")
            print("\nNORTE:\n0-Acre\n1-Amapá\n2-Amazonas\n3-Rondônia\n4-Roraima\n5-Tocantins\n6-Pará")
            print("\nNORDESTE:\n7-Alagoas\n8-Bahia\n9-Ceará\n10-Maranhão\n11-Paraíba\nPernanbuco\n13-Piauí\n14-Rio Grande do Norte\n15-Sergipe")
            print("\nSUDESTE:\n16-Rio de Janeira\n17-São Paulo\n18-Espírito Santo\n19-Minas Gerais")
@@ -130,12 +141,13 @@ if(choice==1):
            print("\nCENTRO-OESTE:\n23-Distrito Federal\n24-Goiás\n25-Mato Grosso\n26-Mato Grosso do Sul")
            opc=int(input("Selecione o número do estado escolhido: "))
            print("\nRESPOSTAS DA LISTA")
-           print("\n****",Estado[0][opc],"****\nPopulação:",Estado[1][opc],"\nCasos acumulados:",Estado[2][opc],"\nCasos novos:",Estado[3][opc],"\nObitos acumulados",Estado[4][opc],"\nObitosnovos:",Estado[5][opc])
+           print("\n****",ListaEstado[0][opc],"****\nPopulação:",ListaEstado[1][opc],"\nCasos acumulados:",ListaEstado[2][opc],"\nCasos novos:",ListaEstado[3][opc],"\nObitos acumulados",ListaEstado[4][opc],"\nObitosnovos:",ListaEstado[5][opc])
            print("\nRESPOSTAS RETIRADAS DA TUPLA")
            print("\n****",EstadoTupla[0][opc],"****\nPopulação:",EstadoTupla[1][opc],"\nCasos acumulados:",EstadoTupla[2][opc],"\nCasos novos:",EstadoTupla[3][opc],"\nObitos acumulados",EstadoTupla[4][opc],"\nObitosnovos:",EstadoTupla[5][opc])
     ## Obito acumulado de todos os estados (c)
      else:
            print("***Obito Acumulado por estatos***")
+           print("#17/08/2020")
            print(estados[0],":",obitosAcumulados[0],"\n"+estados[1],":",obitosAcumulados[1],"\n"+estados[2],":",obitosAcumulados[2])
            print(estados[3],":",obitosAcumulados[3],"\n"+estados[4],":",obitosAcumulados[4],"\n"+estados[5],":",obitosAcumulados[5])
            print(estados[6],":",obitosAcumulados[6],"\n"+estados[7],":",obitosAcumulados[7],"\n"+estados[8],":",obitosAcumulados[8])
@@ -146,16 +158,17 @@ if(choice==1):
            print(estados[21],":",obitosAcumulados[21],"\n"+estados[22],":",obitosAcumulados[22],"\n"+estados[23],":",obitosAcumulados[23])
            print(estados[26],":",obitosAcumulados[26],"\n"+estados[25],":",obitosAcumulados[7],"\n"+estados[24],":",obitosAcumulados[24])
       ## Max e Min dos valores númericos de óbitos novos (j)
-           print("Menor valor numérico de óbitos novos:",min(Estado[5]))
-           print("Maior valor numérico de óbitos novos:",max(Estado[5]))
+           print("Menor valor numérico de óbitos novos:",min(ListaEstado[5]))
+           print("Maior valor numérico de óbitos novos:",max(ListaEstado[5]))
            print("***Total:108536***")        
 ##Imprimindo dados sobre as 10 regiões de Saúde
 if(choice==2):
       print("***Wiki: principais regiões de saúde***\n")
+      print("#17/08/2020")
       print("\n0-Maceió\n1-Salvador\n2-Fortaleza\n3-São Luis\n4-João Pessoa\n5-Recife\n6-Teresina\n7-Natal\n8-Aracaju\n9-Parnamirim")
       ## Max e Min dos valores númericos de óbitos novos (j)
-      print("Menor valor numérico de óbitos novos:",min(Regioes[6]))
-      print("Maior valor numérico de óbitos novos:",max(Regioes[6]))
+      print("Menor valor numérico de óbitos novos:",min(Regioes[6][0:9]))
+      print("Maior valor numérico de óbitos novos:",max(Regioes[6][0:9]))
       opc=int(input("Selecione o número do município escolhido: "))
       if(opc!=9):
            print("\n***"+Regioes[0][opc]+"***")
@@ -167,12 +180,13 @@ if(choice==2):
            print("População:",Regioes[2][opc],"\nCasos acumulados:",Regioes[3][opc],"\nCasos novos:",Regioes[4][opc],"\nObitos acumulados",Regioes[5][opc],"\nObitosnovos:",Regioes[6][opc])
 #Imprimindo os dados do municípios de RR
 if(choice==3):
-       print("***Bem vindo ao Wiki RR***\n")
+       print("***Bem vindo ao Wiki RR **\n")
+       print("#18/08/2020")
        print("\nRegião de saúde:CENTRO NORTE:\n0-Amajari\n1-Alto Alegre\n2-Boa Vista\n3-Bonfim\n4-Cantá\n5-Mucajaí\n6-Normandia\n7-Pacaraima\n8-Uiramutã")
        print("\nRegião de saúde:SUL:\n9-Caracaraí\n10-Caroebe\n11Rorainopólis\n12-São joão da Baliza\n13-São Luiz")
       ## Max e Min dos valores númericos de óbitos novos (j)
-       print("Menor valor numérico de óbitos novos:",min(RR[6]))
-       print("Maior valor numérico de óbitos novos:",max(RR[6]))
+       print("Menor valor numérico de óbitos novos:",min(RR[5]))
+       print("Maior valor numérico de óbitos novos:",max(RR[5]))
        opc=int(input("Selecione o número do município escolhido: "))
        if(opc<9):
            print("\n***"+municipioRR[opc]+"***")

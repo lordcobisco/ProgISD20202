@@ -1,0 +1,4 @@
+import time
+def tempo():
+    time.sleep(10)
+    print("Borá na onda do time")
