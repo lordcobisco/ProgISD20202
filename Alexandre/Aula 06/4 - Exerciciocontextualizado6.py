@@ -1,7 +1,7 @@
 
 ## ANESTESIA
     
-#Montar LISTA com o nome do fármaco e as informações desse fármaco (por ordem de posição: dose, via de administração e tempo de ação)
+#Montar LISTA com o nome do fármaco e as informações desse fármaco (por ordem de posição: dose, via de administração e tempo de ação). Algumas informações estão com tupla, já que a ordem não pode ser modificada nesses casos. 
 cetamina_lista = [("dose",100,"mg/kg"),"Intraperitoneal (IP)",("ação durante",20,"min")]
 isoflurano_lista = [("dose",3,"%"),"Inalatória","variável"]
 acepromazina_lista = [("dose",3,"mg/Kg"),"Intraperitoneal (IP)","ação durante",30,"min"]
@@ -11,7 +11,7 @@ diazepam_lista = [("dose",5,"mg/Kg"),"Intraperitoneal (IP)",("ação durante",20
 # Dicionário com o nome do fármaco  que será utilizado para busca das informaçõs do fármaco
 dicionario_farmacos = {"cetamina":cetamina_lista,"isoflurano":isoflurano_lista,"acepromazina":acepromazina_lista,"midazolam":midazolam_lista,"diazepam":diazepam_lista}
 
-#Montar dicionário de informações dos fármacos
+#Montar DICIONÁRIO de informações dos fármacos (criação de DICIONÁRIO e USO de ESTRUTURA DE REPETIÇÃO)
 anestesico_informacoes = "sim"
 while anestesico_informacoes != "nao":
     anestesico_informacoes = input("O primeiro passo para o procedimento é realizar a anestesia adequada. Os anestésicos possiveis são cetamina,isoflurano,acepromazina,midazolam,diazepam.\n Para receber informações sobre esses anestésicos digite o nome (exatamente igual), caso não deseje informaões, digite nao")
@@ -133,11 +133,11 @@ introducao_canula = "não"
 while introducao_canula != "sim": 
     introducao_canula = input("\nA cânula foi introduzida até o valor de DV? (Digite 'sim' ou 'nao' exatamente igual sem aspas)")
     if introducao_canula == "sim":
-         print ("\n## Agora repita o passo de drenagem do sangue e líquido cefalo raquidiano e na sequência repetir a mistura do acrilitico") # Avaliar se repito a estrutura de repetição
+         print ("\n## Agora repita o passo de drenagem do sangue e líquido cefalo raquidiano e na sequência repetir a mistura do acrilitico") 
     else:
          print("Introduza a cânula até o valor de DV")
 
-#Finalização 
+#Finalização (USO DO IF,ELIF e ELSE)
 print("\n## Agora, levante levemente o braço do estereotáxico, tendo cuidado para a cânula guia previamente fixada não se movimentar. Na sequência acomodar em caixa aquecida por uma lâmpada e sem outros animais acordados")
 caixa_animal = 4
 while caixa_animal != 3:
