@@ -56,7 +56,7 @@ while count<=5:
     if count>3:
         break 
 
-#continue encerra o loop ao final da iteração
+#continue 
 
 tocouNaBarra = 0
 mostrarOValorDoCOntador = 0
