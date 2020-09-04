@@ -1,0 +1,64 @@
+1 - Sobre as estruturas de repetição While e For em python.
+
+I - A estrutura For, por definição, atua como um contador dentro de uma faixa definida pela sintaxe "for range(n)". Onde a repetição ocorre para n de 0 até a instrução de break
+II - A estrutura While pode ser associada a um contador incremental/decremental para atuar de maneira semelhante a um loop For
+III - Não é possível utilizar estruturas de decisão dentro de um loop For
+
+Assinale a alternativa que contém apenas alternativas verdadeiras
+
+a) I, II, III
+b) I, II
+c) II, III
+d) II
+e) Nenhuma das alternativas
+
+2 - Qual a sintaxe para executar uma estrutura While para exclusão de ítens de uma lista A até não haver mais ítens na lista?
+a) while (A):
+	A.pop()
+
+b) while (not A):
+	A.pop()
+
+c) while (A = pop(0)):
+	print(A.pop)
+
+d) while (A(0) = 0)
+	A.pop()
+
+e) while (A != pop(0))
+	A.pop()
+
+
+3 - Os aparelhos de eletroestimulação transcutânea funcionam a partir de uma diferença de potencial induzida em pulsos a partir de eletrodos posicionados sobre a pele, em posições estratégicas para acionamento de músculos específicos. Considerando que o dispositivo trabalhe com ciclos contados a partir da variável CONTA, que vai de 0 a 10 dentro do período previsto, além de possibilitar o paciente ou operador interromper o uso do equipamento a partir de um botão associado a uma variável de entrada BOTAO. Selecione uma alternativa capaz de executar a rotina descrita.
+
+a) while ((0 < CONTA < 10) or (BOTAO = bool(input('Parar?')))):
+	[rotina do eletroestimulador]
+	CONTA = CONTA + 1
+
+b) for CONTA in range (0, 10, 1):
+	[rotina do eletroestimulador]
+	BOTAO = bool(input('Parar?'))
+	if (BOTAO):
+		break
+
+c) while CONTA in range (0, 10, 1):
+	[rotina do eletroestimulador]
+	BOTAO = bool(input('Parar?'))
+	if (BOTAO):
+		break
+
+d) for ((0 < CONTA < 10) or (!BOTAO)):
+	[rotina do eletroestimulador]
+	CONTA = CONTA + 1
+
+e) while (CONTA = 10)
+	[rotina do eletroestimulador]
+	CONTA = CONTA + 1
+	BOTAO = bool(input('Parar?'))
+	if (BOTAO):
+		break
+
+Gabarito:
+1 - d)
+2 - a)
+3 - b)
