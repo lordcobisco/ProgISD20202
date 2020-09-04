@@ -48,15 +48,14 @@ while contador < 100 and contador > 0:
 else:
     print('o numero digitado não está na faixa pedida')
 
-#break 
+#break e continue
+
 count = 0 
 while count<=5:
     print (count)
     count += 1
     if count>3:
         break 
-
-#continue 
 
 tocouNaBarra = 0
 mostrarOValorDoCOntador = 0
