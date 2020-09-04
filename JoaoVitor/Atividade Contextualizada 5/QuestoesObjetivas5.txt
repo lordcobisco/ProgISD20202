@@ -1,0 +1,21 @@
+1 - Sobre as estruturas de dados Tupla, Lista e Dicionário em python, é sabido que possuem empregos diferentes em situações que requerem tradeoff de performance/funcionalidade ou alguma particularidade de leitura e escrita restrita a especificamente uma estrutura. Com os conhecimentos adquiridos na aula 5, complete os espaços com Listas, Tuplas e Dicionários:
+
+As estruturas __________ possuem campos imutáveis, mas podem ser construídas e destruídas durante o tempo de execução do programa. Já as estruturas __________ são muito flexíveis, e permitem alteração de seus campos apenas referenciando o índice de localização da célula desejada no modelo 'a[indice]'. Com um modelo mais complexo, composto por chaves e um ou mais valores associados a cada chave, a estrutura __________ não possui ordem de armazenamento por células, impossibilitando seu acesso por meio de índices, pois seus campos são sorteados por tabelas de espalhamento (HashTables).
+
+
+2 - Considere as seguintes estruturas:
+a = [1231, 'abc', [23, 34]]
+b = (2132, 'cba', (34, 23))
+c = {'1': 3213, '2': 'bac', '3': ['ok']}
+
+Para obter a saída = 23, qual é a chamada necessária?
+a) a[3][2]
+b) c['23']
+c) b[2][1]
+d) a[2][1]
+e) Alternativas c) e d)
+
+
+Gabarito:
+1 - Tuplas, Listas, Dicionários
+2 - e)
