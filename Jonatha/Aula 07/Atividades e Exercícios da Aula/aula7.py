@@ -1,6 +1,29 @@
+import keyboard
+import time
 from os import system
 system('clear')
 
+
+from pynput.keyboard import Listener
+with Listener() as listener:
+    listener.join()
+
+def on_press(key):
+    print("Key pressed")
+
+def on_release(key):
+    print("Key released")
+
+'''
+print('Programa Iniciado!')
+while(True):
+    time.sleep(0.5)
+    print('Lendo teclado...')
+    if(keyboard.is_pressed('a')):
+        print('Saindo do programa!')
+        break
+
+'''
 '''
 def apresentarInterface():
     """Esta função apresenta a interface"""
