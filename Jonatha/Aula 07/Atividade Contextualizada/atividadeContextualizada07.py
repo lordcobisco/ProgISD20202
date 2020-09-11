@@ -16,14 +16,17 @@ for i in range(numExperimentos):
 
 tempo = 0
 divisor = 1000
-print('INICIANDO EXECUÇÃO DO EXPERIMENTO')
+print('INICIANDO EXECUÇÃO DO EXPERIMENTO.')
 while(True):
-    print('Tempo de Experimento: ',tempo,' segundos.')
-    experimento[0].execucao(tempo)
+    print('TEMPO DE EXPERIMENTO: ',tempo,' segundos.')
+    print("Caso aconteça algo errado, pressione 'a'.")
+    for i in range(numExperimentos):
+        experimento[i].execucao(tempo)
+
     tempo+=1
 
     for i in range(divisor):
         time.sleep(1/divisor)
         if(keyboard.is_pressed('a')):
-            print('Saindo do programa!')
+            print('Interrupção gerada. Saindo do programa...')
             break
