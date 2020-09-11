@@ -84,15 +84,12 @@ class Experimento:
 
   def execucao(self, passo):
 
-    if(passo > self.tempoLimite):
-      print('Fim do experimento!')
-      exit()
-
-    i = 0
-    for dispositivo in self.listaDispositivos:
-      print('\nDISPOSITIVO ',i+1)
-      print('ledRGB(Vermelho):',dispositivo.ledRGB['R'][passo])
-      print('ledRGB(Verde):', dispositivo.ledRGB['G'][passo])
-      print('ledRGB(Azul):', dispositivo.ledRGB['B'][passo])
-      i+= 1
-    self.eletrodos.leitura()
+    if(passo <= self.tempoLimite):
+      i = 0
+      for dispositivo in self.listaDispositivos:
+        print('\nDISPOSITIVO ',i+1)
+        print('ledRGB(Vermelho):',dispositivo.ledRGB['R'][passo])
+        print('ledRGB(Verde):', dispositivo.ledRGB['G'][passo])
+        print('ledRGB(Azul):', dispositivo.ledRGB['B'][passo])
+        i+= 1
+      self.eletrodos.leitura()
