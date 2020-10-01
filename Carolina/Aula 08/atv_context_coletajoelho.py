@@ -1,6 +1,9 @@
+#### PROGRAMA REFERENTE A ATIVIDADE CONTEXTUALIZADA 8 #####
+##### ALUNA: CAROLINA KARLA DE SOUZA EVANGELISTA ###########
+
 import csv
 def abrindo():
-    with open('C:\\Users\\carol\\Desktop\\programacao20202\\isdprog2020\\Aula8\\coletaFlexJoelho.csv', 'r') as fileobj:
+    with open('C:\\Users\\carol\\Desktop\\programacao20202\\isdprog2020\\Aula 8\\coletaFlexJoelho.csv', 'r') as fileobj:
         lista=[]
         for line in fileobj:
             dadosEsp=line.split('],""[')
@@ -11,14 +14,18 @@ def abrindo():
             for dadosEsp2 in esp2.split(","):
                 lista.append(float(dadosEsp2))
     return lista
+
 def calculo():
     coleta=abrindo()
     ang=0 
     angulos=[]
+    dt = 0.05 
+    M = 0.98
     for i in range (4,len(coleta),4):
-        ang=0.98*(ang+coleta[i]*0.05)+(1-0.98)*coleta[i-3]
+        ang= M*(ang+coleta[i]*dt)+(1-M)*coleta[i-3]
         angulos.append(ang)
     return angulos
+
 def salvar():
     with open('anguloprocessado.csv','w',newline='') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=' ',

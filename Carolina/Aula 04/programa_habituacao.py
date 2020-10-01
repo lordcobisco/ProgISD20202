@@ -7,86 +7,65 @@ else:
     distancia2= aproximacao-distancia 
     if (distancia2<30):
         print("Liberar 0.5 de rec")
-    contador=0
     barra=int(input("O animal tocou na barra?")) #01
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #02
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #03
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #04
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #05
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #06
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #07
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #08
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #09
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #10
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #11
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #12
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #13
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #14
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #15
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #16
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #17
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #18
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #19
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     barra=int(input("O animal tocou na barra?")) #20
     if (barra==1):
-        contador=contador+1
         print("Liberar 0.5 de rec")
     if (contador==20):
         print("próxima etapa")
