@@ -110,12 +110,12 @@ dict_dados = append_ang(dict_dados, 0)
 dict_dados = append_ang(dict_dados, 1)
     
 # salva os valores calculados em arquivo csv
-with open('angulos_calculados.csv','w',newline = '') as csvfile:
+with open('anguloProcessado.csv','w',newline = '') as csvfile:
   ang_writer = csv.writer(csvfile, delimiter = ',')
   for ang_sensor1, ang_sensor2 in zip(dict_dados[0]['angy'],dict_dados[1]['angy']):
     ang_writer.writerow([str(ang_sensor1), str(ang_sensor2)])
     
 # salva os valores calculados em arquivo txt
-with open('angulos_calculados.txt','w',newline = '') as txtfile:
+with open('anguloProcessado.txt','w',newline = '') as txtfile:
   for ang_sensor1, ang_sensor2 in zip(dict_dados[0]['angy'],dict_dados[1]['angy']):
     txtfile.write(str(ang_sensor1) + ',' + str(ang_sensor2) + '\n')
