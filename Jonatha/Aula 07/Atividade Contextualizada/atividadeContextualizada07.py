@@ -24,7 +24,7 @@ print('INICIANDO EXECUÇÃO DO EXPERIMENTO.')
 while(True):
     print('#'*70)
     print('\nTEMPO DESDE A GÊNESE: ', tempoGlobal, ' segundos.')
-    print("Caso aconteça algo errado, pressione 'a'.")
+    print("Caso aconteça algo errado, pressione 'a' ou CTRL + 'z'.")
     for i in range(numExperimentos):
         if tempoGlobal >= experimentoInicio[i]:
             print('_'*50)
