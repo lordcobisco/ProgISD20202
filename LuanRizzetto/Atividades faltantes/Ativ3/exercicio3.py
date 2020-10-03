@@ -1,6 +1,6 @@
 print("hello world!") # comentario em linha
 
-varstring = "carolina evangelista"
+varstring = "Luan Rizzetto"
 varint = "27"
 varfloat = "2.7"
 
