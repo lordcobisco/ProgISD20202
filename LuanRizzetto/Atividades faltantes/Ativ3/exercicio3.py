@@ -1,10 +1,3 @@
-'''
-Esses codigos são referentes aos programas da aula 3 de programção
-os exercicios de IMC 1 e 2 estão em um arquivo separado .py
-Aluna: Carolina Karla de Souza Evangelista
-Matricula 202002003
-'''
-
 print("hello world!") # comentario em linha
 
 varstring = "carolina evangelista"
