@@ -1,4 +1,4 @@
-lista_nomes = ['Carol', 'Joao', 'Paulo']
+lista_nomes = ['Luan', 'André', 'Paulo']
 
 for nome in lista_nomes:
     print(nome)
@@ -8,7 +8,7 @@ lista = random.rand(10)
 for valor in lista:
     print(valor)
 
-lista_nomes = ['Carol', 'Joao', 'Paulo']
+lista_nomes = ['Luan', 'André', 'Paulo']
 for nome in lista_nomes:
     print(nome)
 else:
