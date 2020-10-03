@@ -47,13 +47,7 @@ class RGB:
             print("Esse experimento acabou")
         
 
-    #def getnumero_dispositivo(self):
-            
-        #return self.numero_dispositivo
-    #def cor_luz(self):
-        #return self.cor
-    #def intensidade_luz(self):
-        #return self.intensidade 
+
 
  
 def parar():
@@ -109,7 +103,7 @@ print(h.execucao_programa())
  
     
     
-## time.sleep(tempo_acionar_dispositivo) ##   time.sleep(tempo_desse_experimento)
+#
     
 
 
