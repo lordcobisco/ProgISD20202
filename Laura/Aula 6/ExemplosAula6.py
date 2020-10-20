@@ -1,10 +1,10 @@
 #Exemplos executados na Aula 06
-
+'''
 listaNome = ['André', 'Felipe', 'Oliveira']
 
 for nome in listaNome:
     print(nome) 
-
+'''
 
 listaNome = ['André', 'Felipe', 'Oliveira']
 
@@ -13,7 +13,7 @@ for nome in listaNome:
 else:
     print('Todos os nomes foram escritos com sucesso!') #escreve todos os nomes da lista e só depois escreve isso
 
-
+'''
 for key, value in enumerate(['p','y','t','h','o','n']):
     print(key, value) #puxa a posição do vetor e diz qual é o elemento na lista
 
